@@ -1,0 +1,11 @@
+---
+const {number, title} = Astro.props
+---
+
+<div class="flex gap-5 items-start mb-14">
+    <span class="text-[#FF0354] border-2 rounded-full border-[#FF0354] flex justify-center items-center min-w-[34px] h-[34px] text-center ">{number}</span>
+   <div>
+    <h4 class="text-white mb-5 text-2xl">{title}</h4>
+    <slot name="card-description"/>
+   </div>
+</div>

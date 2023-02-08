@@ -1,0 +1,76 @@
+---
+import RecomendationCard from "../components/recomendation-card.astro";
+import AllCard from "../components/all-card.astro";
+import { ALL_IN_ONE } from "../config/lists";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Shareflow</title>
+	</head>
+	<body>
+		<header class="">
+			<div class='max-w-md m-auto pt-16 pb-8 px-8'>
+			<img src="logo.svg" class='w-[210px] h-auto mb-16' />
+			<h1 class='text-6xl font-medium mb-4'>Tu <span class='text-[#9747FF]'>agencia de medios</span> a un clikc de distancia.</h1>
+			<img src="iphone.svg" class='w-[380px] mb-5' />
+			
+			<p class='font-medium'>
+				Shareflow, es la primer plataforma en Colombia donde <span class='text-[#9747FF]'>podrás
+				planear, comprar y hacer seguimiento</span> a la pauta en los medios y
+				plataformas digitales más importantes del país.
+			</p>
+		</div>
+		</header>
+		<section class="bg-[#1E1E1E]">
+			<div class='pt-16 px-8 flex flex-col items-center max-w-md m-auto'>
+				<h3 class="text-white text-2xl mb-8">
+					Con Shareflow podrás estar en los principales medios y
+					plataformas del país
+				</h3>
+	
+					<img src="user.png" class='w-[300px]'/>
+			
+			</div>
+		</section>
+		<section>
+			<div class=' max-w-md m-auto py-20 px-8'>
+				<h2 class='text-6xl font-medium mb-10'>Hagámoslo posible</h2>
+			<RecomendationCard />
+			<RecomendationCard />
+			<RecomendationCard />
+			</div>
+		</section>
+		<section class="bg-[#1E1E1E]">
+
+			<div class='max-w-md m-auto py-20 px-8'>
+			<div class="flex items-center justify-between gap-5 mb-14"><img src="shrflow-user.svg" />
+				<h2 class="text-white text-6xl font-medium">¡Todo en uno!</h2></div>
+			{
+				ALL_IN_ONE.map(({number, title, description_one, description_two}) => (
+					<AllCard title={title} number={number}>
+						<div slot="card-description">
+							<p class='text-white mb-5'>{description_one}</p>
+							<p class='text-white'>{description_two}</p>
+						</div>
+					</AllCard>
+				))
+			}
+			</div>
+		</section>
+		<section>
+			<div class='px-8 py-20 flex flex-col items-center'>
+				<img src='women.png' class='mb-10'/>
+				<p class='text-2xl'>
+					Creemos en el <span class='text-[#9747FF]'>marketing digital al alcance de
+					todas las marcas</span>, brindando apoyo y conocimiento tecnológico
+					accesible y ágil <span class='text-[#9747FF]'>para que llegues a tus clientes potenciales.</span>
+				</p>
+				</div>
+		</section>
+	</body>
+</html>
