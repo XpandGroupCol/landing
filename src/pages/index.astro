@@ -1,6 +1,7 @@
 ---
 import RecomendationCard from "../components/recomendation-card.astro";
 import AllCard from "../components/all-card.astro";
+import CountDown from "../components/countdown";
 import { ALL_IN_ONE } from "../config/lists";
 ---
 
@@ -14,63 +15,102 @@ import { ALL_IN_ONE } from "../config/lists";
 	</head>
 	<body>
 		<header class="">
-			<div class='max-w-md m-auto pt-16 pb-8 px-8'>
-			<img src="logo.svg" class='w-[210px] h-auto mb-16' />
-			<h1 class='text-6xl font-medium mb-4'>Tu <span class='text-[#9747FF]'>agencia de medios</span> a un clikc de distancia.</h1>
-			<img src="iphone.svg" class='w-[380px] mb-5' />
-			
-			<p class='font-medium'>
-				Shareflow, es la primer plataforma en Colombia donde <span class='text-[#9747FF]'>podrás
-				planear, comprar y hacer seguimiento</span> a la pauta en los medios y
-				plataformas digitales más importantes del país.
-			</p>
-		</div>
+			<div class="m-auto pt-16 pb-8 px-8">
+				<div class="flex justify-between mb-16">
+					<img src="logo.svg" class="w-[210px] h-auto" />
+					<div class="hidden md:block"><CountDown client:only="react" /></div>
+				</div>
+				<h1 class="text-6xl font-medium mb-4">
+					Tu <span class="text-primary">agencia de medios</span> a un
+					clikc de distancia.
+				</h1>
+				<img src="iphone.svg" class="w-[380px] mb-5" />
+
+				<p class="font-medium">
+					Shareflow, es la primer plataforma en Colombia donde <span
+						class="text-primary"
+						>podrás planear, comprar y hacer seguimiento</span
+					> a la pauta en los medios y plataformas digitales más importantes
+					del país.
+				</p>
+			</div>
 		</header>
 		<section class="bg-[#1E1E1E]">
-			<div class='pt-16 px-8 flex flex-col items-center max-w-md m-auto'>
+			<div class="pt-16 px-8 flex flex-col items-center max-w-md m-auto">
 				<h3 class="text-white text-2xl mb-8">
 					Con Shareflow podrás estar en los principales medios y
 					plataformas del país
 				</h3>
-	
-					<img src="user.png" class='w-[300px]'/>
-			
-			</div>
-		</section>
-		<section>
-			<div class=' max-w-md m-auto py-20 px-8'>
-				<h2 class='text-6xl font-medium mb-10'>Hagámoslo posible</h2>
-			<RecomendationCard />
-			<RecomendationCard />
-			<RecomendationCard />
-			</div>
-		</section>
-		<section class="bg-[#1E1E1E]">
 
-			<div class='max-w-md m-auto py-20 px-8'>
-			<div class="flex items-center justify-between gap-5 mb-14"><img src="shrflow-user.svg" />
-				<h2 class="text-white text-6xl font-medium">¡Todo en uno!</h2></div>
-			{
-				ALL_IN_ONE.map(({number, title, description_one, description_two}) => (
-					<AllCard title={title} number={number}>
-						<div slot="card-description">
-							<p class='text-white mb-5'>{description_one}</p>
-							<p class='text-white'>{description_two}</p>
-						</div>
-					</AllCard>
-				))
-			}
+				<img src="user.png" class="w-[300px]" />
 			</div>
 		</section>
 		<section>
-			<div class='px-8 py-20 flex flex-col items-center'>
-				<img src='women.png' class='mb-10'/>
-				<p class='text-2xl'>
-					Creemos en el <span class='text-[#9747FF]'>marketing digital al alcance de
-					todas las marcas</span>, brindando apoyo y conocimiento tecnológico
-					accesible y ágil <span class='text-[#9747FF]'>para que llegues a tus clientes potenciales.</span>
-				</p>
+			<div class="max-w-md m-auto py-20 px-8">
+				<h2 class="text-6xl font-medium mb-10">Hagámoslo posible</h2>
+				<RecomendationCard />
+				<RecomendationCard />
+				<RecomendationCard />
+			</div>
+		</section>
+		<section class="bg-secondary  md:bg-white px-8">
+			<div class="max-w-[1580px] m-auto md:bg-[#F3F3F3] md:rounded-2xl py-20 px-8">
+				<div class="flex items-center justify-between gap-5 mb-14 sm:flex-col">
+					<img src="shrflow-user.svg" />
+
+					<!-- <picture class="md:order-1 md:min-w-[320px]">
+						<source media="(min-width:1024px)" srcset="women.jpg">
+						<img src="women-2.jpg" alt="women" style="width:auto;">
+					  </picture> -->
+
+					<h2 class="text-white text-6xl font-medium md:text-secondary">
+						¡Todo en uno!
+					</h2>
 				</div>
+				<div class="md:flex text-white md:text-secondary md:gap-5 md:max-w-[1230px] mx-auto">{
+					ALL_IN_ONE.map(
+						({
+							number,
+							title,
+							description_one,
+							description_two,
+						}) => (
+							<div class="md:flex-1">
+								<AllCard title={title} number={number}>
+								<div slot="card-description">
+									<p class="mb-5">
+										{description_one}
+									</p>
+									<p>{description_two}</p>
+								</div>
+							</AllCard>
+							</div>
+						)
+					)
+				}</div>
+			</div>
+		</section>
+		<section>
+			<div class="mx-auto px-8 py-20 flex flex-col items-center md:flex-row gap-10 max-w-[1580px]">
+				<picture class="md:order-1 md:min-w-[320px]">
+					<source media="(min-width:1024px)" srcset="women.jpg">
+					<img src="women-2.jpg" alt="women" style="width:auto;">
+				  </picture>
+				  <div class="relative">
+					<p class="text-2xl lg:text-xl pl-3 before:content-[''] before:h-[100%] before:block before:left-0 before:w-[2px] before:bg-secondary before:absolute lg:pl-14">
+						Creemos en el <span class="text-primary"
+							>marketing digital al alcance de todas las marcas</span
+						>, brindando apoyo y conocimiento tecnológico accesible y
+						ágil <span class="text-primary"
+							>para que llegues a tus clientes potenciales.</span
+						>
+					</p>
+				  </div>
+
+			
+					
+
+			</div>
 		</section>
 	</body>
 </html>
