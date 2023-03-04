@@ -2,7 +2,7 @@
 import RecomendationCard from "../components/recomendation-card.astro";
 import AllCard from "../components/all-card.astro";
 import CountDown from "../components/countdown";
-import { ALL_IN_ONE } from "../config/lists";
+import { ALL_IN_ONE, MAKE_IT_HAPPEN } from "../config/lists";
 ---
 
 <html lang="en">
@@ -18,11 +18,13 @@ import { ALL_IN_ONE } from "../config/lists";
 			<div class="m-auto pt-16 pb-8 px-8">
 				<div class="flex justify-between mb-16">
 					<img src="logo.svg" class="w-[210px] h-auto" />
-					<div class="hidden md:block"><CountDown client:only="react" /></div>
+					<div class="hidden md:block">
+						<CountDown client:only="react" />
+					</div>
 				</div>
 				<h1 class="text-6xl font-medium mb-4">
-					Tu <span class="text-primary">agencia de medios</span> a un
-					clikc de distancia.
+					Tu <span class="text-primary">agencia de medios</span> a un clikc
+					de distancia.
 				</h1>
 				<img src="iphone.svg" class="w-[380px] mb-5" />
 
@@ -46,70 +48,84 @@ import { ALL_IN_ONE } from "../config/lists";
 			</div>
 		</section>
 		<section>
-			<div class="max-w-md m-auto py-20 px-8">
-				<h2 class="text-6xl font-medium mb-10">Hagámoslo posible</h2>
-				<RecomendationCard />
-				<RecomendationCard />
-				<RecomendationCard />
-			</div>
-		</section>
-		<section class="bg-secondary  md:bg-white px-8">
-			<div class="max-w-[1580px] m-auto md:bg-[#F3F3F3] md:rounded-2xl py-20 px-8">
-				<div class="flex items-center justify-between gap-5 mb-14 sm:flex-col">
-					<img src="shrflow-user.svg" />
-
-					<!-- <picture class="md:order-1 md:min-w-[320px]">
-						<source media="(min-width:1024px)" srcset="women.jpg">
-						<img src="women-2.jpg" alt="women" style="width:auto;">
-					  </picture> -->
-
-					<h2 class="text-white text-6xl font-medium md:text-secondary">
-						¡Todo en uno!
-					</h2>
-				</div>
-				<div class="md:flex text-white md:text-secondary md:gap-5 md:max-w-[1230px] mx-auto">{
-					ALL_IN_ONE.map(
-						({
-							number,
-							title,
-							description_one,
-							description_two,
-						}) => (
-							<div class="md:flex-1">
-								<AllCard title={title} number={number}>
-								<div slot="card-description">
-									<p class="mb-5">
-										{description_one}
-									</p>
-									<p>{description_two}</p>
-								</div>
-							</AllCard>
-							</div>
-						)
-					)
+			<div class="max-w-[1280px] m-auto py-20 px-8">
+				<h2 class="text-6xl font-medium mb-10 sm:text-center">¡Hagámoslo posible!</h2>
+				<div class="md:flex  md:gap-5">{
+					MAKE_IT_HAPPEN.map(({ img, title, description }) => (
+						<RecomendationCard
+							img={img}
+							title={title}
+							description={description}
+						/>
+					))
 				}</div>
 			</div>
 		</section>
+		<section class="bg-secondary md:bg-white px-8">
+			<div
+				class="max-w-[1580px] m-auto md:bg-[#F3F3F3] md:rounded-2xl py-20 md:px-8"
+			>
+				<div
+					class="flex items-center justify-center gap-5 mb-[80px] sm:flex-col"
+				>
+					<img
+						src="shrflow.png"
+						alt="logo with user"
+						class="w-[164px] md:w-[312px]"
+					/>
+					<h2
+						class="text-white text-6xl font-medium md:text-secondary"
+					>
+						¡Todo en uno!
+					</h2>
+				</div>
+				<div
+					class="md:flex text-white md:text-secondary md:gap-5 md:max-w-[1230px] mx-auto"
+				>
+					{
+						ALL_IN_ONE.map(
+							({
+								number,
+								title,
+								description_one,
+								description_two,
+							}) => (
+								<div class="md:flex-1">
+									<AllCard title={title} number={number}>
+										<div slot="card-description">
+											<p class="mb-5">
+												{description_one}
+											</p>
+											<p>{description_two}</p>
+										</div>
+									</AllCard>
+								</div>
+							)
+						)
+					}
+				</div>
+			</div>
+		</section>
 		<section>
-			<div class="mx-auto px-8 py-20 flex flex-col items-center md:flex-row gap-10 max-w-[1580px]">
+			<div
+				class="mx-auto px-8 py-20 flex flex-col items-center md:flex-row gap-10 max-w-[1580px]"
+			>
 				<picture class="md:order-1 md:min-w-[320px]">
-					<source media="(min-width:1024px)" srcset="women.jpg">
-					<img src="women-2.jpg" alt="women" style="width:auto;">
-				  </picture>
-				  <div class="relative">
-					<p class="text-2xl lg:text-xl pl-3 before:content-[''] before:h-[100%] before:block before:left-0 before:w-[2px] before:bg-secondary before:absolute lg:pl-14">
+					<source media="(min-width:1024px)" srcset="women.jpg" />
+					<img src="women-2.jpg" alt="women" style="width:auto;" />
+				</picture>
+				<div class="relative">
+					<p
+						class="text-2xl lg:text-xl pl-3 before:content-[''] before:h-[100%] before:block before:left-0 before:w-[2px] before:bg-secondary before:absolute lg:pl-14"
+					>
 						Creemos en el <span class="text-primary"
 							>marketing digital al alcance de todas las marcas</span
-						>, brindando apoyo y conocimiento tecnológico accesible y
-						ágil <span class="text-primary"
+						>, brindando apoyo y conocimiento tecnológico accesible
+						y ágil <span class="text-primary"
 							>para que llegues a tus clientes potenciales.</span
 						>
 					</p>
-				  </div>
-
-			
-					
-
+				</div>
 			</div>
 		</section>
 	</body>

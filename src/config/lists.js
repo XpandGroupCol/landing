@@ -19,7 +19,20 @@ export const ALL_IN_ONE = [
     }
 ]
 
-
-
-
-
+export const MAKE_IT_HAPPEN = [
+    {
+        img: 'point.jpg',
+        title: 'Decide a quién quieres llegar',
+        description: 'Define la segmentación de tu campaña y nosotros nos adaptamos al objetivo de tu marca'
+    },
+    {
+        img: 'phone.jpg',
+        title: 'Elige dónde quieres estar',
+        description: 'Selecciona los medios donde podrás encontrar clientes potenciales y generar un mayor reconocimiento de marca'
+    },
+    {
+        img: 'computer.jpg',
+        title: 'Añade los creativos',
+        description: 'Agrega los videos e imágenes que le asegurarán una mayor visibilidad a tu marca'
+    }
+]
