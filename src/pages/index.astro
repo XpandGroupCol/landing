@@ -3,6 +3,8 @@ import RecomendationCard from "../components/recomendation-card.astro";
 import AllCard from "../components/all-card.astro";
 import CountDown from "../components/countdown";
 import { ALL_IN_ONE, MAKE_IT_HAPPEN } from "../config/lists";
+import MediaLogos from "../components/media-logos.astro";
+import Button from "../components/button";
 ---
 
 <html lang="en">
@@ -23,42 +25,47 @@ import { ALL_IN_ONE, MAKE_IT_HAPPEN } from "../config/lists";
 					</div>
 				</div>
 				<h1 class="text-6xl font-medium mb-4">
-					Tu <span class="text-primary">agencia de medios</span> a un clikc
-					de distancia.
+					Tu <span class="text-primary">agencia de medios</span> a un clic
+					de distancia
 				</h1>
-				<img src="iphone.svg" class="w-[380px] mb-5" />
+				<img src="iphone.svg" class="w-[380px] mb-5 mx-auto" />
 
-				<p class="font-medium">
-					Shareflow, es la primer plataforma en Colombia donde <span
+				<p class="font-medium mb-8">
+					Shareflow, es la primer plataforma de Colombia donde podrás<span
 						class="text-primary"
-						>podrás planear, comprar y hacer seguimiento</span
+						>planear, comprar y hacer seguimiento</span
 					> a la pauta en los medios y plataformas digitales más importantes
 					del país.
 				</p>
+
+				<Button text='Crea tu primera campaña' client:only='react' />
 			</div>
 		</header>
 		<section class="bg-[#1E1E1E]">
 			<div class="pt-16 px-8 flex flex-col items-center max-w-md m-auto">
 				<h3 class="text-white text-2xl mb-8">
-					Con Shareflow podrás estar en los principales medios y
-					plataformas del país
+					Podrás estar en los principales medios y plataformas
 				</h3>
-
 				<img src="user.png" class="w-[300px]" />
 			</div>
 		</section>
 		<section>
 			<div class="max-w-[1280px] m-auto py-20 px-8">
-				<h2 class="text-6xl font-medium mb-10 sm:text-center">¡Hagámoslo posible!</h2>
-				<div class="md:flex  md:gap-5">{
-					MAKE_IT_HAPPEN.map(({ img, title, description }) => (
-						<RecomendationCard
-							img={img}
-							title={title}
-							description={description}
-						/>
-					))
-				}</div>
+				<h2 class="text-6xl font-medium mb-10 sm:text-center">
+					¡Hagámoslo posible!
+				</h2>
+				<div class="md:flex md:gap-5">
+					{
+						MAKE_IT_HAPPEN.map(({ img, title, description }) => (
+							<RecomendationCard
+								img={img}
+								title={title}
+								description={description}
+							/>
+						))
+					}
+				</div>
+				<Button text='¡Inicia tu campaña!' client:only='react' />
 			</div>
 		</section>
 		<section class="bg-secondary md:bg-white px-8">
@@ -104,6 +111,7 @@ import { ALL_IN_ONE, MAKE_IT_HAPPEN } from "../config/lists";
 						)
 					}
 				</div>
+				<Button text='¡Probar ahora!' client:only='react' />
 			</div>
 		</section>
 		<section>
@@ -128,5 +136,39 @@ import { ALL_IN_ONE, MAKE_IT_HAPPEN } from "../config/lists";
 				</div>
 			</div>
 		</section>
+		<section class="bg-secondary">
+			<div class="max-w-[1580px] mx-auto  py-20 px-8 md:flex md:flex-col md:items-center">
+				<h2 class="text-white text-6xl font-medium md:text-secondary sm:text-center mb-11">
+					¿Quienes nos validan?
+				</h2>
+				<div class="md:hidden">
+					<MediaLogos />
+				</div>
+				<div class="flex md:items-center relative flex-col">
+					<img src="logo-white.svg" class="w-[210px] mb-8" />
+
+					<div class="flex gap-10 relative mb-8">
+						<p class="ml-8 hidden">Síguenos en nuestras redes:</p>
+						<div class="flex gap-12 w-full md:items-center md:before:content-[''] md:before:h-[100%] md:before:block md:before:left-0 md:before:w-[2px] before:bg-secondary before:absolute">
+							<a href="">
+								<img src="youtube.svg" class="w-[44px] h-auto" />
+							</a>
+							<a href="">
+								<img src="instagram.svg" class="w-[30px] h-auto" />
+							</a>
+							<a href="">
+								<img src="linkedin.svg" class="w-[30px] h-auto" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<p class="text-[11px] text-white">Shareflow® es una marca registrada de Xpand Group S.A.S.</p>
+			</div>
+		</section>
 	</body>
 </html>
+
+
+
+
+
