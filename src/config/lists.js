@@ -36,3 +36,16 @@ export const MAKE_IT_HAPPEN = [
         description: 'Agrega los videos e imágenes que le asegurarán una mayor visibilidad a tu marca'
     }
 ]
+
+
+
+export const MEDIA_IMAGES = [
+    {name: 'mastek', src: 'mastek-w.svg'},
+    {name: 'tyn', src: 'tyn-w.svg'},
+    {name: 'gerente', src: 'gerente-w.svg'},
+    {name: 'hsb', src: 'hsb-w.svg'},
+    {name: 'latinpyme', src: 'latinpyme-w.svg'},
+    {name: 'acis', src: 'acis-w.svg'},
+    {name: 'tecnogus', src: 'tecnogus-w.svg'},
+    {name: 'valora', src: 'valora-w.svg'}
+]
