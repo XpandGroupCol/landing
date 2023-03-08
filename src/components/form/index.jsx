@@ -10,7 +10,9 @@ import Modal from '../modal'
 import Button from '../button'
 import { useState } from 'react'
 import ControllerField from '../controllerField'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { BASE_URL } from '../../config/lists'
 
 const WelcomeForm = ({ text, className = '' }) => {
 
@@ -19,6 +21,8 @@ const WelcomeForm = ({ text, className = '' }) => {
     defaultValues: { ...invitationValues },
     resolver: yupResolver(invitationSchema)
   })
+
+  const [loading, setLoading] = useState(false)
 
   const handleClose = () => {
     setOpen(false)
@@ -31,22 +35,42 @@ const WelcomeForm = ({ text, className = '' }) => {
 
 
   const onSubmit = async (values) => {
+    setLoading(true)
     try {
-      console.log({values})
-    } catch ({ response }) {
-      console.log('error')
+      const responseBody = await fetch(BASE_URL, {
+        method: "POST",
+        body: JSON.stringify(values),
+        credentials: "same-origin",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+
+    
+      if(!responseBody.ok) return toast.error('Parece que no podemos procesar tu soliticud por favor intente nuevamente')
+
+      await responseBody.json()
+      toast.success('El registo ha sido exitoso. Gracias por confiar ser parte de Shareflow')
+      handleClose()
+
+    } catch (e) {
+      toast.error('Parece que no podemos procesar tu soliticud por favor intente nuevamente')
+    }finally{
+      setLoading(false)
+
     }
   }
 
   return (
     <>
+     <ToastContainer theme='colored' />
      <div className={`w-full xs:max-w-[320px]  ${className}`}>
      <Button onClick={handleOpen} text={text} />
      </div>
       <Modal
         title='¡Únete a la lista de espera!'
         onClose={handleClose}
-        open={open}>
+        open={loading ? true: open}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='mb-8 flex flex-col gap-6'>
             <ControllerField
@@ -85,13 +109,15 @@ const WelcomeForm = ({ text, className = '' }) => {
           </div>
           <div className='flex justify-center sm:justify-end gap-6'>
             <button
-              className='bg-primary border-none text-white uppercase px-2 py-1 font-semibold rounded-md'>
+            disabled={loading}
+              className={`bg-primary border-none text-white uppercase px-2 py-1 font-semibold rounded-md ${loading ? 'opacity-50' : ''}`}>
               Registrarme
             </button>
             <button
             type='button'
+            disabled={loading}
             onClick={handleClose}
-              className='border-2 border-secondary text-secondary uppercase px-2 py-1 font-semibold rounded-md'>
+              className={`border-2 border-secondary text-secondary uppercase px-2 py-1 font-semibold rounded-md ${loading ? 'opacity-50' : ''}`}>
               Cancelar
             </button>
           </div>

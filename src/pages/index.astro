@@ -22,8 +22,72 @@ import Carrousel from "../components/carrousel";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Shareflow</title>
+
+		<script>
+			(function (h, o, t, j, a, r) {
+				h.hj =
+					h.hj ||
+					function () {
+						(h.hj.q = h.hj.q || []).push(arguments);
+					};
+				h._hjSettings = { hjid: 2995590, hjsv: 6 };
+				a = o.getElementsByTagName("head")[0];
+				r = o.createElement("script");
+				r.async = 1;
+				r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(
+				window,
+				document,
+				"https://static.hotjar.com/c/hotjar-",
+				".js?sv="
+			);
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-0DKPWLX1P9"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-0DKPWLX1P9");
+		</script>
+
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-WGC42PH");
+		</script>
+
+		<script
+			id="ze-snippet"
+			src="https://static.zdassets.com/ekr/snippet.js?key=05ed8143-c9b3-4762-805f-5dc5694d390b"
+		></script>
 	</head>
 	<body>
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-WGC42PH"
+				height="0"
+				width="0"
+				style="display:none;visibility:hidden"></iframe></noscript
+		>
 		<header>
 			<div class="m-auto max-w-[1580px] pt-[72px] pb-[50px] px-[40px]">
 				<div class="flex justify-between mb-[58px]">
@@ -35,7 +99,9 @@ import Carrousel from "../components/carrousel";
 				<div
 					class="md:max-w-[700px] lg:max-w-[1580px] md:mx-auto lg:justify-start lg:flex lg:items-center"
 				>
-					<div class="lg:max-w-[700px] lg:min-w-[350px] flex flex-col justify-center lg:justify-between">
+					<div
+						class="lg:max-w-[700px] lg:min-w-[350px] flex flex-col justify-center lg:justify-between"
+					>
 						<h1
 							class="text-[55px] leading-[55px] mb-[54px] lg:mb-[15px] font-ceraBold"
 						>
@@ -64,7 +130,10 @@ import Carrousel from "../components/carrousel";
 							/>
 						</div>
 					</div>
-					<img src="iphone-2.svg" class="hidden lg:block lg:w-[500px] xl:w-[700px]" />
+					<img
+						src="iphone-2.svg"
+						class="hidden lg:block lg:w-[500px] xl:w-[700px]"
+					/>
 				</div>
 			</div>
 		</header>
