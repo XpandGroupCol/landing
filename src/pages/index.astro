@@ -2,7 +2,7 @@
 import RecomendationCard from "../components/recomendation-card.astro";
 import AllCard from "../components/all-card.astro";
 import CountDown from "../components/countdown";
-import { ALL_IN_ONE, MAKE_IT_HAPPEN, MEDIA_IMAGES } from "../config/lists";
+import { ALL_IN_ONE, customConfig, MAKE_IT_HAPPEN, MEDIA_IMAGES, MEDIOS_IMAGES } from "../config/lists";
 import MediaLogos from "../components/media-logos.astro";
 import WelcomeForm from "../components/form";
 import Carrousel from "../components/carrousel";
@@ -17,8 +17,8 @@ import Carrousel from "../components/carrousel";
 		<title>Shareflow</title>
 	</head>
 	<body>
-		<header class="">
-			<div class="m-auto pt-16 pb-8 px-8">
+		<header>
+			<div class="m-auto pt-16 pb-8 px-8 max-w-[1580px]">
 				<div class="flex justify-between mb-16">
 					<img src="logo.svg" class="w-[210px] h-auto" />
 					<div class="hidden md:block">
@@ -52,7 +52,10 @@ import Carrousel from "../components/carrousel";
 						>principales medios</span
 					> y plataformas
 				</h3>
-				<img src="user.png" class="w-[300px]" />
+				<img src="video.png" class="w-[300px]" />
+			</div>
+			<div class="w-full max-w-[1000px] mx-auto">
+				<Carrousel client:only="react" images={MEDIOS_IMAGES} config={customConfig} />
 			</div>
 		</section>
 		<section>
@@ -154,11 +157,11 @@ import Carrousel from "../components/carrousel";
 				<div class="md:hidden">
 					<MediaLogos />
 				</div>
-				<div
-					class="w-full max-w-[1000px] mx-auto bg-white rounded-full py-2 px-20 hidden md:block"
-				>
-					<Carrousel client:only="react" images={MEDIA_IMAGES} />
-				</div>
+			
+					<div class="w-full max-w-[1000px] mx-auto hidden md:block">
+						<Carrousel client:only="react" images={MEDIA_IMAGES} />
+					</div>
+			
 				<div class="flex md:items-center relative flex-col">
 					<img src="logo-white.svg" class="w-[210px] mb-8" />
 
