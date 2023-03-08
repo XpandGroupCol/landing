@@ -52,7 +52,7 @@ export const MEDIOS_IMAGES = [
     { name: 'la.republica', src: 'la.republica.svg' },
     { name: 'caracol', src: 'caracol.svg' },
     { name: 'minuto.30', src: 'minuto.30.svg' },
-    { name: 'shock', src: 'shock.svg' },
+    { name: 'pulzo', src: 'pulzo.svg' },
     { name: 'el.tiempo', src: 'el.tiempo.svg' },
     { name: 'valora', src: 'valora.svg' },
     { name: 'publimetro', src: 'publimetro.svg' },
@@ -60,7 +60,7 @@ export const MEDIOS_IMAGES = [
     { name: 'portafolio', src: 'portafolio.svg' },
     { name: 'tiktok', src: 'tiktok.svg' },
     { name: 'spotify', src: 'spotify.svg' },
-    { name: 'pulzo', src: 'pulzo.svg' },
+    { name: 'shock', src: 'shock.svg' },
     { name: 'el.espectador', src: 'el.espectador.svg' },
     
    
@@ -70,9 +70,9 @@ export const customConfig = {
     slidesToShow: 1,
     responsive: [
         {
-            breakpoint: 800,
+            breakpoint: 300,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
         },

@@ -56,32 +56,42 @@ import Carrousel from "../components/carrousel";
 		</header>
 		<section class="bg-[#1E1E1E]">
 			<div
-				class="px-[40px] pt-[50px] flex flex-col items-center max-w-md md:max-w-[1580px] m-auto pb-[150px] relative"
+				class="px-[40px] pt-[50px] relative md:flex md:items-center md:gap-[40px] max-w-[1580px] mx-auto"
 			>
-				<h3
-					class="font-ceraNormal text-white text-[25px] leading-[35px] mb-[38px]"
+				<div
+					class="flex flex-col items-center pb-[150px] md:pb-0 max-w-md md:max-w-[1580px] m-auto md:order-2"
 				>
-					Podrás estar en <span class="text-primary"
-						>los principales medios</span
-					> y plataformas
-				</h3>
-				<div class="w-full max-w-[1000px] mx-auto mb-[40px]">
-					<Carrousel
-						client:only="react"
-						images={MEDIOS_IMAGES}
-						config={customConfig}
-					/>
+					<h3
+						class="font-ceraNormal text-white text-[25px] md:text-[30px] lg:text-[50px] leading-[35px] md:leading-[30px] lg:leading-[55px] mb-[38px] md:text-center md:mb-[30px]"
+					>
+						Podrás estar en <span
+							class="text-primary md:text-[#FF0354]"
+							>los principales medios</span
+						> y plataformas
+					</h3>
+					<div
+						class="w-full md:max-w-[300px] lg:max-w-[500px] mx-auto mb-[40px]"
+					>
+						<Carrousel
+							client:only="react"
+							images={MEDIOS_IMAGES}
+							config={customConfig}
+						/>
+					</div>
 				</div>
 				<img
 					src="video.png"
-					class="min-w-[300px] max-w-[90%] absolute bottom-[-60px]"
+					class="min-w-[300px] max-w-[90%] xs:max-w-[400px] absolute md:relative bottom-[-60px] xs:bottom-[-80px] left-0 right-0 mx-auto md:bottom-0"
 				/>
 			</div>
 		</section>
-		<section>
-			<div class="max-w-[1280px] m-auto px-[40px] pt-[140px] pb-[50px]">
+		<section class="md:relative">
+			<div class="md:h-[350px] lg:h-[400px] md:bg-[#1e1e1e] md:absolute md:w-full" />
+			<div
+				class="max-w-[1280px] m-auto px-[40px] pt-[140px] pb-[50px] md:relative md:z-10"
+			>
 				<h2
-					class="text-[55px] leading-[57px] font-ceraNormal mb-[35px] sm:text-center"
+					class="text-[55px] lg:text-[55px] lg:leading-[55px] md:text-white leading-[55px] font-ceraNormal mb-[35px] sm:text-center md:text-[30px] md:leading-[35px]"
 				>
 					¡Hagámoslo posible!
 				</h2>
@@ -134,7 +144,9 @@ import Carrousel from "../components/carrousel";
 											<p class="mb-5 font-helvetica">
 												{description_one}
 											</p>
-											<p class="font-helvetica">{description_two}</p>
+											<p class="font-helvetica">
+												{description_two}
+											</p>
 										</div>
 									</AllCard>
 								</div>
@@ -157,10 +169,13 @@ import Carrousel from "../components/carrousel";
 					<p
 						class="font-ceraNormal text-[25px] md:text-[20px] leading-[35px] md:leading-[28px] lg:text-xl pl-3 before:content-[''] before:h-[100%] before:block before:left-0 before:w-[2px] before:bg-secondary before:absolute lg:pl-14"
 					>
-						Creemos en los medios <span class="text-primary">digital al alcance de todas las
-						marcas</span>, para brindar apoyo tecnológico accesible y ágil
-						<span class="text-primary">para que llegues a tus clientes potenciales
-						efectivamente</span>
+						Creemos en los medios <span class="text-primary"
+							>digital al alcance de todas las marcas</span
+						>, para brindar apoyo tecnológico accesible y ágil
+						<span class="text-primary"
+							>para que llegues a tus clientes potenciales
+							efectivamente</span
+						>
 					</p>
 				</div>
 			</div>
@@ -175,21 +190,32 @@ import Carrousel from "../components/carrousel";
 					¿Quienes nos validan?
 				</h2>
 				<div class="text border-b-2 border-white pb-[75px] mb-[120px]">
-				<div class="md:hidden mb-[84px] ">
-					<MediaLogos />
-				</div>
-				<div class="md:max-w-[700px] lg:max-w-[1000px] mx-auto hidden md:block md:mb-[70px]">
-					<Carrousel client:only="react" images={MEDIA_IMAGES} />
+					<div class="md:hidden mb-[84px]">
+						<MediaLogos />
+					</div>
+					<div
+						class="md:max-w-[700px] lg:max-w-[1000px] mx-auto hidden md:block md:mb-[70px]"
+					>
+						<Carrousel client:only="react" images={MEDIA_IMAGES} />
+					</div>
+
+					<WelcomeForm
+						text="¡Registrarme ahora!"
+						client:only="react"
+					/>
 				</div>
 
-				<WelcomeForm text="¡Registrarme ahora!" client:only="react" />
-			</div>
-
-				<div class="flex relative flex-col xs:flex-row xs:justify-between xs:items-center">
-					<img src="logo-white.svg" class="w-[210px] mb-8 " />
+				<div
+					class="flex relative flex-col xs:flex-row xs:justify-between xs:items-center"
+				>
+					<img src="logo-white.svg" class="w-[210px] mb-8" />
 
 					<div class="flex gap-10 relative mb-8 ml-8">
-						<p class="ml-8 hidden md:block text-white text-coraBold font-[20px] leading-[35px] whitespace-nowrap">Síguenos en nuestras redes:</p>
+						<p
+							class="ml-8 hidden md:block text-white text-coraBold font-[20px] leading-[35px] whitespace-nowrap"
+						>
+							Síguenos en nuestras redes:
+						</p>
 						<div
 							class="flex gap-12 xs:gap-4 sm:gap-12 w-full md:items-center md:before:content-[''] md:before:h-[100%] md:before:block md:before:left-0 md:before:w-[2px] before:bg-white before:absolute"
 						>
@@ -214,7 +240,9 @@ import Carrousel from "../components/carrousel";
 						</div>
 					</div>
 				</div>
-				<p class="text-[11px] text-gray-500 font-helvetica leading-[19px] font-thin xs:text-center">
+				<p
+					class="text-[11px] text-gray-500 font-helvetica leading-[19px] font-thin xs:text-center"
+				>
 					Shareflow® es una marca registrada de Xpand Group S.A.S.
 				</p>
 			</div>

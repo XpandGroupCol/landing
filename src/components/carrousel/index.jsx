@@ -33,8 +33,8 @@ const properties = {
 }
 
 const Carrousel = ({ images, config = {} }) => {
+    console.log({...{...properties, ...config}})
     return (
-
         <div className="w-full bg-white rounded-full py-2 px-20">
             <Slide {...{...properties, ...config}}>
                 {images.map(({ src, name }) => (
