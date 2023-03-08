@@ -40,7 +40,7 @@ const WelcomeForm = ({ text }) => {
 
   return (
     <div>
-     <div className='w-full sm:max-w-[320px] mx-auto'>
+     <div className='w-full xs:max-w-[320px] mx-auto'>
      <Button onClick={handleOpen} text={text} />
      </div>
       <Modal

@@ -1,7 +1,7 @@
 const Button = ({text, onClick}) => {
     return (
         <button onClick={onClick}
-         className='bg-primary border-none text-white uppercase px-8 py-4 font-bold w-full rounded-xl'>
+         className='bg-primary font-ceraBold border-none text-white uppercase  h-[48px] text-[20px] leading-[42px] w-full rounded-xl'>
             {text}
         </button>
     )

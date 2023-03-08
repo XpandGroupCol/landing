@@ -104,7 +104,7 @@ import Carrousel from "../components/carrousel";
 				class="max-w-[1580px] m-auto md:bg-[#F3F3F3] md:rounded-2xl pt-[100px] pb-[50px] md:px-8"
 			>
 				<div
-					class="flex items-center justify-center gap-5 mb-[80px] sm:flex-col"
+					class="flex items-center justify-center gap-5 mb-[80px] md:mb-[60px] sm:flex-col"
 				>
 					<img
 						src="shrflow.png"
@@ -112,7 +112,7 @@ import Carrousel from "../components/carrousel";
 						class="w-[164px] md:w-[312px]"
 					/>
 					<h2
-						class="text-white font-ceraNormal text-[55px] leading-[55px] md:text-secondary"
+						class="text-white font-ceraNormal text-[55px] md:text-[50px] leading-[55px] md:text-secondary"
 					>
 						¡Todo en uno!
 					</h2>
@@ -134,7 +134,7 @@ import Carrousel from "../components/carrousel";
 											<p class="mb-5 font-helvetica">
 												{description_one}
 											</p>
-											<p>{description_two}</p>
+											<p class="font-helvetica">{description_two}</p>
 										</div>
 									</AllCard>
 								</div>
@@ -147,7 +147,7 @@ import Carrousel from "../components/carrousel";
 		</section>
 		<section>
 			<div
-				class="mx-auto px-[40px] py-[90px] flex flex-col items-center md:flex-row gap-10 max-w-[1580px]"
+				class="mx-auto px-[40px] py-[90px] md:py-[140px] flex flex-col items-center md:flex-row gap-10 max-w-[1580px]"
 			>
 				<picture class="md:order-1 md:min-w-[320px]">
 					<source media="(min-width:1024px)" srcset="women.jpg" />
@@ -155,7 +155,7 @@ import Carrousel from "../components/carrousel";
 				</picture>
 				<div class="relative">
 					<p
-						class="font-ceraNormal text-[25px] leading-[35px] lg:text-xl pl-3 before:content-[''] before:h-[100%] before:block before:left-0 before:w-[2px] before:bg-secondary before:absolute lg:pl-14"
+						class="font-ceraNormal text-[25px] md:text-[20px] leading-[35px] md:leading-[28px] lg:text-xl pl-3 before:content-[''] before:h-[100%] before:block before:left-0 before:w-[2px] before:bg-secondary before:absolute lg:pl-14"
 					>
 						Creemos en los medios <span class="text-primary">digital al alcance de todas las
 						marcas</span>, para brindar apoyo tecnológico accesible y ágil
@@ -167,31 +167,31 @@ import Carrousel from "../components/carrousel";
 		</section>
 		<section class="bg-secondary">
 			<div
-				class="max-w-[1580px] mx-auto pt-[70px] pb-[30px] px-[40px] md:flex md:flex-col md:items-center"
+				class="max-w-[1580px] mx-auto pt-[70px] md:pt-[160px] pb-[30px] md:pb-[60px] px-[40px] md:flex md:flex-col md:items-center"
 			>
 				<h2
-					class="text-white text-[55px] leading-[55px] font-ceraNormal sm:text-center mb-[84px]"
+					class="text-white text-[55px] md:text-[50px] leading-[55px] font-ceraNormal sm:text-center mb-[84px] md:mb-[36px]"
 				>
 					¿Quienes nos validan?
 				</h2>
 				<div class="text border-b-2 border-white pb-[75px] mb-[120px]">
-				<div class="md:hidden mb-[84px]">
+				<div class="md:hidden mb-[84px] ">
 					<MediaLogos />
 				</div>
-				<div class="w-full max-w-[1000px] mx-auto hidden md:block">
+				<div class="md:max-w-[700px] lg:max-w-[1000px] mx-auto hidden md:block md:mb-[70px]">
 					<Carrousel client:only="react" images={MEDIA_IMAGES} />
 				</div>
 
 				<WelcomeForm text="¡Registrarme ahora!" client:only="react" />
 			</div>
 
-				<div class="flex md:items-center relative flex-col xs:flex-row xs:justify-between xs:items-center">
-					<img src="logo-white.svg" class="w-[210px] mb-8" />
+				<div class="flex relative flex-col xs:flex-row xs:justify-between xs:items-center">
+					<img src="logo-white.svg" class="w-[210px] mb-8 " />
 
-					<div class="flex gap-10 relative mb-8">
-						<p class="ml-8 hidden">Síguenos en nuestras redes:</p>
+					<div class="flex gap-10 relative mb-8 ml-8">
+						<p class="ml-8 hidden md:block text-white text-coraBold font-[20px] leading-[35px] whitespace-nowrap">Síguenos en nuestras redes:</p>
 						<div
-							class="flex xs:gap-4 gap-12 w-full md:items-center md:before:content-[''] md:before:h-[100%] md:before:block md:before:left-0 md:before:w-[2px] before:bg-secondary before:absolute"
+							class="flex gap-12 xs:gap-4 sm:gap-12 w-full md:items-center md:before:content-[''] md:before:h-[100%] md:before:block md:before:left-0 md:before:w-[2px] before:bg-white before:absolute"
 						>
 							<a href="">
 								<img
@@ -214,7 +214,7 @@ import Carrousel from "../components/carrousel";
 						</div>
 					</div>
 				</div>
-				<p class="text-[11px] text-white font-helvetica leading-[19px] font-thin xs:text-center">
+				<p class="text-[11px] text-gray-500 font-helvetica leading-[19px] font-thin xs:text-center">
 					Shareflow® es una marca registrada de Xpand Group S.A.S.
 				</p>
 			</div>

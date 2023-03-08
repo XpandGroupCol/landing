@@ -2,10 +2,10 @@
 const {number, title} = Astro.props
 ---
 
-<div class="flex gap-5 items-start mb-[60px]">
-    <span class="text-[#FF0354] mt-2 border-2 text-[25px] leading-[35px] rounded-full border-[#FF0354] flex justify-center items-center min-w-[34px] h-[34px] text-center font-ceraNormal">{number}</span>
+<div class="flex gap-5 md:gap-[10px] items-start mb-[60px]">
+    <span class="text-[#FF0354] mt-2 border-2 text-[25px] md:text-[20px] leading-[35px] rounded-full border-[#FF0354] flex justify-center items-center min-w-[34px] h-[34px] md:min-w-[28px] md:h-[28px] text-center font-ceraNormal">{number}</span>
    <div>
-    <h4 class="mb-5 font-ceraNormal text-[25px] leading-[35px]">{title}</h4>
+    <h4 class="mb-5 font-ceraNormal md:font-ceraBold text-[25px] leading-[35px] md:text-[20px]">{title}</h4>
     <slot name="card-description"/>
    </div>
 </div>
