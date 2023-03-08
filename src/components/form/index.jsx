@@ -12,7 +12,7 @@ import { useState } from 'react'
 import ControllerField from '../controllerField'
 
 
-const WelcomeForm = ({ text }) => {
+const WelcomeForm = ({ text, className = '' }) => {
 
   const [open, setOpen] = useState(false)
   const { formState: { errors }, handleSubmit, control, reset, setError } = useForm({
@@ -40,7 +40,7 @@ const WelcomeForm = ({ text }) => {
 
   return (
     <>
-     <div className='xs:max-w-[320px]'>
+     <div className={`w-full xs:max-w-[320px]  ${className}`}>
      <Button onClick={handleOpen} text={text} />
      </div>
       <Modal
