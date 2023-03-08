@@ -1,8 +1,15 @@
 ---
+import "../global.css";
 import RecomendationCard from "../components/recomendation-card.astro";
 import AllCard from "../components/all-card.astro";
 import CountDown from "../components/countdown";
-import { ALL_IN_ONE, customConfig, MAKE_IT_HAPPEN, MEDIA_IMAGES, MEDIOS_IMAGES } from "../config/lists";
+import {
+	ALL_IN_ONE,
+	customConfig,
+	MAKE_IT_HAPPEN,
+	MEDIA_IMAGES,
+	MEDIOS_IMAGES,
+} from "../config/lists";
 import MediaLogos from "../components/media-logos.astro";
 import WelcomeForm from "../components/form";
 import Carrousel from "../components/carrousel";
@@ -18,20 +25,22 @@ import Carrousel from "../components/carrousel";
 	</head>
 	<body>
 		<header>
-			<div class="m-auto pt-16 pb-8 px-8 max-w-[1580px]">
-				<div class="flex justify-between mb-16">
+			<div class="m-auto max-w-[1580px] pt-[72px] pb-[50px] px-[40px]">
+				<div class="flex justify-between mb-[58px]">
 					<img src="logo.svg" class="w-[210px] h-auto" />
 					<div class="hidden md:block">
 						<CountDown client:only="react" />
 					</div>
 				</div>
-				<h1 class="text-6xl font-medium mb-4">
+				<h1
+					class="text-[55px] leading-[55px] mb-[54px] font-ceraNormal"
+				>
 					Tu <span class="text-primary">agencia de medios</span> a un clic
 					de distancia
 				</h1>
 				<img src="iphone.svg" class="w-[380px] mb-5 mx-auto" />
 
-				<p class="font-medium mb-8">
+				<p class="font-helvetica font-[15px] leading-[21px] mb-[35px]">
 					Shareflow, es la primer plataforma de Colombia donde podrás<span
 						class="text-primary"
 						>planear, comprar y hacer seguimiento</span
@@ -46,24 +55,37 @@ import Carrousel from "../components/carrousel";
 			</div>
 		</header>
 		<section class="bg-[#1E1E1E]">
-			<div class="pt-16 px-8 flex flex-col items-center max-w-md m-auto">
-				<h3 class="text-white text-2xl mb-8">
-					Podrás estar en los <span class="text-primary"
-						>principales medios</span
+			<div
+				class="px-[40px] pt-[50px] flex flex-col items-center max-w-md md:max-w-[1580px] m-auto pb-[150px] relative"
+			>
+				<h3
+					class="font-ceraNormal text-white text-[25px] leading-[35px] mb-[38px]"
+				>
+					Podrás estar en <span class="text-primary"
+						>los principales medios</span
 					> y plataformas
 				</h3>
-				<img src="video.png" class="w-[300px]" />
-			</div>
-			<div class="w-full max-w-[1000px] mx-auto">
-				<Carrousel client:only="react" images={MEDIOS_IMAGES} config={customConfig} />
+				<div class="w-full max-w-[1000px] mx-auto mb-[40px]">
+					<Carrousel
+						client:only="react"
+						images={MEDIOS_IMAGES}
+						config={customConfig}
+					/>
+				</div>
+				<img
+					src="video.png"
+					class="min-w-[300px] max-w-[90%] absolute bottom-[-60px]"
+				/>
 			</div>
 		</section>
 		<section>
-			<div class="max-w-[1280px] m-auto py-20 px-8">
-				<h2 class="text-6xl font-medium mb-10 sm:text-center">
+			<div class="max-w-[1280px] m-auto px-[40px] pt-[140px] pb-[50px]">
+				<h2
+					class="text-[55px] leading-[57px] font-ceraNormal mb-[35px] sm:text-center"
+				>
 					¡Hagámoslo posible!
 				</h2>
-				<div class="md:flex md:gap-5">
+				<div class="mb-[60px] md:flex md:gap-5">
 					{
 						MAKE_IT_HAPPEN.map(({ img, title, description }) => (
 							<RecomendationCard
@@ -77,9 +99,9 @@ import Carrousel from "../components/carrousel";
 				<WelcomeForm text="¡Inicia tu campaña!" client:only="react" />
 			</div>
 		</section>
-		<section class="bg-secondary md:bg-white px-8">
+		<section class="bg-secondary md:bg-white px-[40px]">
 			<div
-				class="max-w-[1580px] m-auto md:bg-[#F3F3F3] md:rounded-2xl py-20 md:px-8"
+				class="max-w-[1580px] m-auto md:bg-[#F3F3F3] md:rounded-2xl pt-[100px] pb-[50px] md:px-8"
 			>
 				<div
 					class="flex items-center justify-center gap-5 mb-[80px] sm:flex-col"
@@ -90,7 +112,7 @@ import Carrousel from "../components/carrousel";
 						class="w-[164px] md:w-[312px]"
 					/>
 					<h2
-						class="text-white text-6xl font-medium md:text-secondary"
+						class="text-white font-ceraNormal text-[55px] leading-[55px] md:text-secondary"
 					>
 						¡Todo en uno!
 					</h2>
@@ -109,7 +131,7 @@ import Carrousel from "../components/carrousel";
 								<div class="md:flex-1">
 									<AllCard title={title} number={number}>
 										<div slot="card-description">
-											<p class="mb-5">
+											<p class="mb-5 font-helvetica">
 												{description_one}
 											</p>
 											<p>{description_two}</p>
@@ -125,7 +147,7 @@ import Carrousel from "../components/carrousel";
 		</section>
 		<section>
 			<div
-				class="mx-auto px-8 py-20 flex flex-col items-center md:flex-row gap-10 max-w-[1580px]"
+				class="mx-auto px-[40px] py-[90px] flex flex-col items-center md:flex-row gap-10 max-w-[1580px]"
 			>
 				<picture class="md:order-1 md:min-w-[320px]">
 					<source media="(min-width:1024px)" srcset="women.jpg" />
@@ -133,42 +155,43 @@ import Carrousel from "../components/carrousel";
 				</picture>
 				<div class="relative">
 					<p
-						class="text-2xl lg:text-xl pl-3 before:content-[''] before:h-[100%] before:block before:left-0 before:w-[2px] before:bg-secondary before:absolute lg:pl-14"
+						class="font-ceraNormal text-[25px] leading-[35px] lg:text-xl pl-3 before:content-[''] before:h-[100%] before:block before:left-0 before:w-[2px] before:bg-secondary before:absolute lg:pl-14"
 					>
-						Creemos en el <span class="text-primary"
-							>marketing digital al alcance de todas las marcas</span
-						>, brindando apoyo y conocimiento tecnológico accesible
-						y ágil <span class="text-primary"
-							>para que llegues a tus clientes potenciales.</span
-						>
+						Creemos en los medios <span class="text-primary">digital al alcance de todas las
+						marcas</span>, para brindar apoyo tecnológico accesible y ágil
+						<span class="text-primary">para que llegues a tus clientes potenciales
+						efectivamente</span>
 					</p>
 				</div>
 			</div>
 		</section>
 		<section class="bg-secondary">
 			<div
-				class="max-w-[1580px] mx-auto py-20 px-8 md:flex md:flex-col md:items-center"
+				class="max-w-[1580px] mx-auto pt-[70px] pb-[30px] px-[40px] md:flex md:flex-col md:items-center"
 			>
 				<h2
-					class="text-white text-6xl font-medium sm:text-center mb-11"
+					class="text-white text-[55px] leading-[55px] font-ceraNormal sm:text-center mb-[84px]"
 				>
 					¿Quienes nos validan?
 				</h2>
-				<div class="md:hidden">
+				<div class="text border-b-2 border-white pb-[75px] mb-[120px]">
+				<div class="md:hidden mb-[84px]">
 					<MediaLogos />
 				</div>
-			
-					<div class="w-full max-w-[1000px] mx-auto hidden md:block">
-						<Carrousel client:only="react" images={MEDIA_IMAGES} />
-					</div>
-			
-				<div class="flex md:items-center relative flex-col">
+				<div class="w-full max-w-[1000px] mx-auto hidden md:block">
+					<Carrousel client:only="react" images={MEDIA_IMAGES} />
+				</div>
+
+				<WelcomeForm text="¡Registrarme ahora!" client:only="react" />
+			</div>
+
+				<div class="flex md:items-center relative flex-col xs:flex-row xs:justify-between xs:items-center">
 					<img src="logo-white.svg" class="w-[210px] mb-8" />
 
 					<div class="flex gap-10 relative mb-8">
 						<p class="ml-8 hidden">Síguenos en nuestras redes:</p>
 						<div
-							class="flex gap-12 w-full md:items-center md:before:content-[''] md:before:h-[100%] md:before:block md:before:left-0 md:before:w-[2px] before:bg-secondary before:absolute"
+							class="flex xs:gap-4 gap-12 w-full md:items-center md:before:content-[''] md:before:h-[100%] md:before:block md:before:left-0 md:before:w-[2px] before:bg-secondary before:absolute"
 						>
 							<a href="">
 								<img
@@ -191,7 +214,7 @@ import Carrousel from "../components/carrousel";
 						</div>
 					</div>
 				</div>
-				<p class="text-[11px] text-white">
+				<p class="text-[11px] text-white font-helvetica leading-[19px] font-thin xs:text-center">
 					Shareflow® es una marca registrada de Xpand Group S.A.S.
 				</p>
 			</div>

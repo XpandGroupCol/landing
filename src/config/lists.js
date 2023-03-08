@@ -67,13 +67,13 @@ export const MEDIOS_IMAGES = [
 ]
 
 export const customConfig = {
-    slidesToShow: 2,
+    slidesToShow: 1,
     responsive: [
         {
             breakpoint: 800,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 2
+                slidesToScroll: 1
             }
         },
     ]

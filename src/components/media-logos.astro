@@ -1,18 +1,15 @@
 ---
 import { MEDIA_IMAGES } from "../config/lists";
-import WelcomeForm from "./form";
 ---
 
-<div class="text border-b-2 border-white mb-20 pb-14">
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap items-center gap-[30px]">
         {
             MEDIA_IMAGES.map(({ name, src }, index) => {
                 const isPar = index % 2;
-                const pictureWith = isPar ? "40%" : "60%"
                 const imgSize = isPar ? 'min-w-[63px]' : 'min-w-[133px]'
                 return (
                     <picture
-                        class={`flex-1 min-w-[${pictureWith}] mb-10`}
+                        class={`mb-[40px] flex flex-1 justify-center`}
                     >
                         <img
                             src={src}
@@ -24,5 +21,3 @@ import WelcomeForm from "./form";
             })
         }
     </div>
-    <WelcomeForm text="¡Registrarme ahora!" client:only="react" />
-</div>
