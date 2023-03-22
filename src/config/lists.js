@@ -79,4 +79,4 @@ export const customConfig = {
     ]
 }
 
-export const BASE_URL = 'https://shareflow-api-production.up.railway.app/v1/site/invitation'
+export const BASE_URL = 'https://shareflow-api-prod.up.railway.app/v1/site/invitation'
