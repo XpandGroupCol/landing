@@ -1,5 +1,7 @@
 ---
 import Carrousel from '../components/carrousel/index'
+import {MEDIOS_IMAGES} from '../config/lists'
+import {customConfig} from  '../config/lists'
 ---
 <html lang="en">
 	<head>
@@ -114,7 +116,9 @@ import Carrousel from '../components/carrousel/index'
 						</p>
 						<!-- Carrousel -->
 						<div>
-							<Carrousel></Carrousel>
+							<Carrousel client:only="react"
+							images={MEDIOS_IMAGES}
+							config={customConfig}/>
 							
 						</div>
 						<!-- 
