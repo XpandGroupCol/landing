@@ -29,3 +29,22 @@ const properties = {
         },
     ]
 }
+
+const Carrousel = ({ images, config = {} }) => {
+    return (
+        <div className="w-full bg-white rounded-full py-2 px-20">
+            <Slide {...{...properties, ...config}}>
+                {images.map(({ src, name }) => (
+                    <div className="each-slide-effect flex justify-center min-w-[140px]" key={name}>
+                        <img src={src} alt={name} className='w-auto h-[36px] invert' />
+                    </div>
+                ))}
+
+            </Slide>
+        </div>
+
+
+    );
+};
+
+export default Carrousel
