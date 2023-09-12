@@ -114,13 +114,7 @@ import {customConfig} from  '../config/lists'
 							 a la pauta en los medios y plataformas digitales más
 							importantes del país.
 						</p>
-						<!-- Carrousel -->
-						<div>
-							<Carrousel client:only="react"
-							images={MEDIOS_IMAGES}
-							config={customConfig}/>
-							
-						</div>
+						
 						<!-- 
 						<div class="flex justify-center lg:justify-start">
 						 <WelcomeForm
@@ -134,6 +128,13 @@ import {customConfig} from  '../config/lists'
 						class="hidden lg:block lg:w-[500px] lg:xl:aspect-[500/500] xl:w-[700px] xl:aspect-[700/700]"
 						alt="iphone-2"
 					/>
+				</div>
+				<!-- Carrousel -->
+				<div>
+					<Carrousel client:only="react"
+					images={MEDIOS_IMAGES}
+					config={customConfig}/>
+					
 				</div>
 			</div>
 		</header>
