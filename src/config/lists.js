@@ -62,9 +62,10 @@ export const MEDIOS_IMAGES = [
     { name: 'spotify', src: 'spotify.svg' },
     { name: 'shock', src: 'shock.svg' },
     { name: 'el.espectador', src: 'el.espectador.svg' },
-    { name: 'fondo.banner', src:'fondo.banner.png'}
-    
-   
+    { name: 'fondo.banner', src:'fondo.banner.png'},
+    { name: 'imagen.banner', src:'Imagen.banner.png'}
+ 
+  
 ]
 
 
