@@ -13,6 +13,8 @@ module.exports = {
 				ceraBold: "'Cera Bold', serif",
 				ceraNormal: "'Cera Normal', serif",
 				helvetica: "'Helvetica', serif",
+				ceraLight: "'cera-pro-light',serif",
+				ceraThin:"'cera-pro-thin',serif"
 			},
 			screens: {
 				xs: '450px'
