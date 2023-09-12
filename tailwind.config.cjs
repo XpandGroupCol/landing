@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'image-banner': "url('./public/fondo.banner.png')"},
+				'image-banner': "url('./public/fondo.banner.svg')"},
 			colors: {
 				primary: '#9747FF',
 				secondary: '#2D2D2C'
