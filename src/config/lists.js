@@ -63,7 +63,7 @@ export const MEDIOS_IMAGES = [
     { name: 'shock', src: 'shock.svg' },
     { name: 'el.espectador', src: 'el.espectador.svg' },
     { name: 'fondo.banner', src:'fondo.banner.png'},
-    { name: 'imagen.banner', src:'Imagen.banner.png'}
+    { name: 'imagen.banner', src:'phone.image.png'}
  
   
 ]
