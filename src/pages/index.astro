@@ -4,6 +4,7 @@ import {MEDIOS_IMAGES} from '../config/lists'
 import {customConfig} from  '../config/lists'
 import { Controller } from 'react-hook-form';
 import WelcomeForm from '../components/form';
+import { MEDIA_IMAGES } from '../config/lists';
 ---
 <html lang="en">
 	<head>
@@ -111,18 +112,14 @@ import WelcomeForm from '../components/form';
 								client:only="react"
 							/>
 				</div>
-<!-- 
-				<div
-						class="flex flex-col w-full md:max-w-[300px] lg:max-w-[500px] mx-auto mb-[40px]"
+ 
+			<!-- 	
+			<div
+						class="md:max-w-[700px] lg:max-w-[1000px] mx-auto hidden md:block md:mb-[70px]"
 					>
-						<Carrousel
-							client:only="react"
-							images={MEDIOS_IMAGES}
-							config={customConfig}
-						/>
+						<Carrousel client:only="react" images={MEDIA_IMAGES} />
 					</div>
 -->
-
 
 				</div>
 				
