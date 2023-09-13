@@ -5,7 +5,8 @@
 @layer base {
     @font-face {
         font-family: "Cera Bold" ;
-        src: url("/landing/public/fonts/cera-pro-bold.otf") format("opentype");
+        src: url("../public/fonts/cera-pro-bold.otf") format("opentype");
+        font-weight: bold;
         
     }
 
