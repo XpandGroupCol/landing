@@ -6,7 +6,7 @@
     @font-face {
         font-family: "Cera Bold" ;
         src: url("../public/fonts/cera-pro-bold.otf") format("opentype");
-        font-weight: bold;
+        font-weight: "700";
         
     }
 
