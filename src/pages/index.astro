@@ -5,6 +5,7 @@ import {customConfig} from  '../config/lists'
 import { Controller } from 'react-hook-form';
 import WelcomeForm from '../components/form';
 import { MEDIA_IMAGES } from '../config/lists';
+import "../global.css";
 ---
 <html lang="en">
 	<head>
@@ -95,7 +96,7 @@ import { MEDIA_IMAGES } from '../config/lists';
 				<h3 class="font-ceraLight text-[18px] ">Paso a paso <span class="font-ceraBold">Campaña</span></h3>
 				</div>
 				<div class="flex">
-				<span>Beneficios Shareflow</span>
+				<span class="font-ceraBold">Beneficios Shareflow</span>
 				</div>
 			    </div>
 				<div class="mt-[120px] ml-[]">
@@ -113,18 +114,19 @@ import { MEDIA_IMAGES } from '../config/lists';
 							/>
 				</div>
  
-			<!-- 	
+				
 			<div
 						class="md:max-w-[700px] lg:max-w-[1000px] mx-auto hidden md:block md:mb-[70px]"
 					>
-						<Carrousel client:only="react" images={MEDIA_IMAGES} />
+						
 					</div>
--->
+
 
 				</div>
 				
 			</div>
 		</header>
+		<Carrousel client:only="react" images={MEDIA_IMAGES} />
 		
 		
 	</body>

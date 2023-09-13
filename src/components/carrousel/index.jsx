@@ -1,5 +1,5 @@
 import { Slide } from "react-slideshow-image";
-
+import "react-slideshow-image/dist/styles.css"
 
 const buttonStyle = {
     width: "15px",
