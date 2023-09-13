@@ -1,8 +1,6 @@
 
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-
-
 import { invitationSchema, invitationValues } from './schema'
 import Input from '../input'
 import PhoneInput from '../input-phone'
