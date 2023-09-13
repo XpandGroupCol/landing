@@ -3,11 +3,14 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			size:{
+				'base': '18px'
+			},
 			backgroundImage: {
 				'image-banner': "url('./public/fondo.banner.svg')"},
 			colors: {
-				primary: '#9747FF',
-				secondary: '#2D2D2C'
+				primary: '#FFFFFF',
+				secondary: '#D9D9D9'
 			},
 			fontFamily: {
 				// 'ceraBold': ['Cera Bold', 'sans-serif'],
