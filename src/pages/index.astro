@@ -3,6 +3,7 @@ import Carrousel from '../components/carrousel/index'
 import {MEDIOS_IMAGES} from '../config/lists'
 import {customConfig} from  '../config/lists'
 import { Controller } from 'react-hook-form';
+import WelcomeForm from '../components/form';
 ---
 <html lang="en">
 	<head>
@@ -96,6 +97,16 @@ import { Controller } from 'react-hook-form';
 				<span>Beneficios Shareflow</span>
 				</div>
 			    </div>	
+				<img
+				src="phone.image.png"
+				class="hidden lg:block lg:w-[500px] lg:xl:aspect-[500/500] xl:w-[700px] xl:aspect-[700/700]"/>
+
+				<div>
+					<h2>Iniciar sesion</h2>
+				</div>
+				<div>
+					<WelcomeForm></WelcomeForm>
+				</div>
 
 
 
