@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Cera Bold" ;
+        src: url("/landing/public/fonts/cera-pro-bold.otf") format("opentype");
+        
+    }
+
+    @font-face {
+        font-family: "Helvetica" ;
+        src: url("/landing/public/fonts/helvetica-neue-normal.otf") format("opentype");
+        
+    }
+    /*añado cera thin */
+    @font-face {
+        font-family: "Cera Light";
+        src: url("/landing/public/fonts/cera-pro-light.otf") format("opentype");
+        
+    }
+    @font-face {
+        font-family:"Cera Thin" ;
+        src: url("/landing/public/fonts/cera-pro-thin.otf") format("opentype");
+       
+    }
+}

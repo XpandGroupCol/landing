@@ -10,11 +10,11 @@ module.exports = {
 				secondary: '#2D2D2C'
 			},
 			fontFamily: {
-				ceraBold: "'cera-pro-bold', serif",
+				ceraBold: "'Cera Bold', serif",
 				ceraNormal: "'Cera Normal', serif",
 				helvetica: "'Helvetica', serif",
-				ceraLight: "'cera-pro-light',serif",
-				ceraThin:"'cera-pro-thin',serif"
+				ceraThin:"'Cera Thin',serif",
+				ceraLight:"'Cera Light', serif"
 			},
 			screens: {
 				xs: '450px'
