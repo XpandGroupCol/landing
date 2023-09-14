@@ -47,21 +47,23 @@ const Tab = () => {
 
   return (
     <div className="p-8">
-      <div className="flex mb-4">
+      <div className="flex space-x-4">
         {tabs.map((tab, index) => (
           <button
             key={index}
             onClick={() => setActiveTab(index)}
-            className={`px-4 py-2 ${
+            className={`w-16 h-16 flex items-center justify-center rounded-full ${
               activeTab === index ? "bg-blue-500 text-white" : "bg-gray-200"
             }`}
           >
-            {tab.title}
+            {/* Aquí puedes mostrar una ícono o una letra, depende de lo que quieras */}
+            {tab.title[0]}{" "}
+            {/* Estoy usando la primera letra del título como un ejemplo */}
           </button>
         ))}
       </div>
 
-      <div>{tabs[activeTab].content}</div>
+      <div className="mt-8">{tabs[activeTab].content}</div>
     </div>
   );
 };
