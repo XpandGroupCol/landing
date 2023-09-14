@@ -144,20 +144,24 @@ import Carrousel from "../components/carrousel";
 					<!-- texto abajo -->
 					<div class="flex ml-[333px] mt-[117px] mb-[80px]">
 					<p class="font-ceraLight text-primary text-[24px] ">Shareflow te ofrece la oportunidad de destacar en los
-						<span class="font-ceraBold"> medios y plataformas más influyentes del país</span>.</p>	
+						<span class="font-ceraBold"> medios y plataformas más influyentes del país</span></p>	
 					</div>
 				
-			<div class="flex flex-col gap-[40px]">
+			<div class="flex flex-col gap-[40px] mb-[35px]">
 				<Carrousel client:only="react" images={MEDIA_IMAGES} /> 
-				<Carrousel client:only="react" images={MEDIA_IMAGES} /> 
+				<Carrousel client:only="react" images={MEDIA_IMAGES} />
+			</div> 
 		</header>
 		<!--aqui empiezo la segunda seccion -->
-		<section class="flex bg-primary">
-			<div>
-			<Tab client:only ="react"/>
+		<section class=" bg-primary flex justify-center items-cente">
+			<div class="flex text-center mt-[85px]">
+				<h3 class="font-ceraLight text-[60px] leading-33 text-third">¿Cómo crear
+					<span class="font-ceraBold text-black">tu campaña?</span> </h3>
+			
 		</div>
-
+		
 		</section>
+		<Tab client:only ="react"/>
 		
 		
 		
