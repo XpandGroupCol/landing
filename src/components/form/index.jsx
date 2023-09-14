@@ -110,14 +110,14 @@ const WelcomeForm = ({ text, className = '' }) => {
           <div className='flex justify-center sm:justify-end gap-6'>
             <button
             disabled={loading}
-              className={`bg-[#E62057] border-none text-white uppercase px-2 py-1 font-semibold rounded-md ${loading ? 'opacity-50' : ''}`}>
+              className={`bg-third border-none text-white uppercase px-2 py-1 font-semibold rounded-md ${loading ? 'opacity-50' : ''}`}>
               Registrarme
             </button>
             <button
             type='button'
             disabled={loading}
             onClick={handleClose}
-              className={`border-2 border-secondary text-secondary uppercase px-2 py-1 font-semibold rounded-md ${loading ? 'opacity-50' : ''}`}>
+              className={`border-2 border-third text-third uppercase px-2 py-1 font-semibold rounded-md ${loading ? 'opacity-50' : ''}`}>
               Cancelar
             </button>
           </div>
