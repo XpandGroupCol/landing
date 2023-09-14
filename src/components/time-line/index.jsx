@@ -56,8 +56,7 @@ const Tab = () => {
               activeTab === index ? "bg-blue-500 text-white" : "bg-gray-200"
             }`}
           >
-            {/* Aquí puedes mostrar una ícono o una letra, depende de lo que quieras */}
-            {tab.title[0]}{" "}
+            {index + 1}
             {/* Estoy usando la primera letra del título como un ejemplo */}
           </button>
         ))}
