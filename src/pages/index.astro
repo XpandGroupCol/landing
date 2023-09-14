@@ -4,7 +4,7 @@ import WelcomeForm from "../components/form";
 //import RecomendationCard from "../components/recomendation-card.astro";
 //import AllCard from "../components/all-card.astro";
 //import CountDown from "../components/countdown";
-/*import {
+import {
 	ALL_IN_ONE,
 	customConfig,
 	MAKE_IT_HAPPEN,
@@ -13,7 +13,7 @@ import WelcomeForm from "../components/form";
 } from "../config/lists";
 import MediaLogos from "../components/media-logos.astro";
 
-import Carrousel from "../components/carrousel";*/
+import Carrousel from "../components/carrousel";
 ---
 
 <html lang="en">
@@ -81,7 +81,7 @@ import Carrousel from "../components/carrousel";*/
 			src="https://static.zdassets.com/ekr/snippet.js?key=05ed8143-c9b3-4762-805f-5dc5694d390b"
 		></script>
 	</head>
-	<body class="bg-image-banner">
+	<body >
 		<noscript
 			><iframe
 				src="https://www.googletagmanager.com/ns.html?id=GTM-WGC42PH"
@@ -89,7 +89,7 @@ import Carrousel from "../components/carrousel";*/
 				width="0"
 				style="display:none;visibility:hidden"></iframe></noscript
 		>
-		<header>
+		<header class="bg-image-banner">
 			<div class="flex  text-secondary max-w-[1580px] pt-[72px] pb-[50px] px-[40px]">
 				<div class="mt-[51] pl-[0]">
 					<img src="logo-white.svg" alt="logo shareflow" class="w-[217px] h-[auto]" />
@@ -112,40 +112,47 @@ import Carrousel from "../components/carrousel";*/
 				</div>
 				</div>
 				<!--empiezo texto e imagen -->
-				<div class="flex max-w-[1580px]">
-					<div class=" mt-[309px] ml-[224px] font-ceraLight">
-						<h3 class="text-[60px] font-ceraLight text-primary" >¡Tu
-							 campaña en medios 
-							<span class="font-ceraBold">digitales lista en cuestión 
+				<div class="flex  w-auto bg-red-500">
+					<div class=" flex w-[820px] flex-col mt-[309px] mr-0 ml-[150px] font-ceraLight bg-red-300">
+						<h3 class="text-[60px] flex-shrink-0 font-ceraLight text-primary leading-70" >¡Tu
+							 campaña en medios <br/>
+							<span class="font-ceraBold flex-shrink-0">digitales lista en cuestión 
 							de minutos!</span></h3>
-							<p class=" flex-shrink-0 text-primary text[24px] mt-[2px] 
+							
+							<p class=" mt-[2px] text-primary text-[24px] 
 							font-ceraLight">Con Shareflow,
 								 podrás consolidar tu presencia en los 
 								principales medios digitales del país, catapultando
 								 tu marca hacia un nivel superior de reconocimiento
 								  y éxito.</p>
+								
 
 							
 					</div>
-					<!--empiezo texto e imagen -->
-					<div class=" flex-shrink-0 hidden lg:block lg:w-[500px] lg:xl:aspect-[500/500]
+					<!--empiezo  imagen -->
+					<div class=" bg-red-200 flex-shrink-0 hidden lg:block lg:w-[500px] lg:xl:aspect-[500/500]
 					xl:w-[700px] xl:aspect-[700/700]">
 					   <img src="phone.banner.png"
-					   class=" ml-[57px] mr-[208px] mt-[152px] w-[728px]"/>
+					   class=" ml-[57px] mr- mt-[152px] w-[728px]"/>
 					   
 				   </div>	
 					</div>	
 					<!-- texto abajo -->
-					<div>
-					<p>Shareflow te ofrece la oportunidad de destacar en los
+					<div class="flex ml-[333px]">
+					<p class="font-ceraLight text-primary text-[24px] ">Shareflow te ofrece la oportunidad de destacar en los
 						 medios y plataformas más influyentes del país.</p>	
 					</div>
-				</section>		
+				
+			<div>
 		</header>
+		<!--aqui empeizo la segunda seccion -->
+		<section class="flex bg-primary">
+
+		</section>
 		
-		<!-- ... El resto de tu código ... -->
 		
-				<!--<Carrousel client:only="react" images={MEDIA_IMAGES} /> -->
+		
+				<Carrousel client:only="react" images={MEDIA_IMAGES} /> 
 				
 				
 				
