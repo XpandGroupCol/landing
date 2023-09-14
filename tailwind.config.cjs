@@ -5,7 +5,8 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: '#9747FF',
-				secondary: '#2D2D2C'
+				secondary: '#2D2D2C',
+				third: '#E62057',
 			},
 			backgroundImage: {
 				'image-banner': "url('/fondo.banner.svg')"},
