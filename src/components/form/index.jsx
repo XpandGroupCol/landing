@@ -110,7 +110,7 @@ const WelcomeForm = ({ text, className = '' }) => {
           <div className='flex justify-center sm:justify-end gap-6'>
             <button
             disabled={loading}
-              className={`bg-primary border-none text-white uppercase px-2 py-1 font-semibold rounded-md ${loading ? 'opacity-50' : ''}`}>
+              className={`bg-[#E62057] border-none text-white uppercase px-2 py-1 font-semibold rounded-md ${loading ? 'opacity-50' : ''}`}>
               Registrarme
             </button>
             <button

@@ -17,8 +17,8 @@ const Button = ({ text, onClick }) => {
         <button onClick={onClick} className='bg-white font-ceraBold border-none h-[46px] text-[20px] leading-[42px] w-full rounded-[30px] px-6 flex justify-center items-center whitespace-nowrap'>
             {words.length === 2 ? (
                 <>
-                    <span className="text-third">{words[0]}</span> {/* Este será el color rosado */}
-                    <span className="text-black ml-1">{words[1]}</span> {/* Este será el color negro */}
+                    <span className="text-third">{words[0]}</span> 
+                    <span className="text-black ml-1">{words[1]}</span> 
                 </>
             ) : (
                 text
