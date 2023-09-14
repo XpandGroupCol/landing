@@ -12,7 +12,7 @@
     @font-face {
         font-family: "Cera Normal" ;
         src: url("/fonts/cera-pro-normal.otf") format("opentype");
-        font-weight: "500";
+        font-weight: "300";
     }
 
     @font-face {
@@ -22,7 +22,8 @@
     }
     @font-face {
         font-family: "Cera Light";
-        src: url("/fonts/cera-pro-light.otf") format("opentype");
+        src: url("/landing/public/fonts/cera-pro-light.otf") format("opentype");
+        font-weight: "300";
         
         
         
