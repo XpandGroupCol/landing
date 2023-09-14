@@ -4,8 +4,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#9747FF',
-				secondary: '#2D2D2C'
+				primary: '#FFFFFF',
+				secondary: '#D9D9D9',
+				third: '#E62057'
 			},
 			backgroundImage: {
 				'image-banner': "url('/fondo.banner.svg')"},
@@ -13,6 +14,8 @@ module.exports = {
 				ceraBold: "'Cera Bold', serif",
 				ceraNormal: "'Cera Normal', serif",
 				helvetica: "'Helvetica', serif",
+				ceraThin:"'Cera Thin',serif",
+				ceraLight:"'Cera Light', serif"
 			},
 			screens: {
 				xs: '450px'
