@@ -145,7 +145,8 @@ import Carrousel from "../components/carrousel";
 						<span class="font-ceraBold"> medios y plataformas más influyentes del país</span>.</p>	
 					</div>
 				
-			<div>
+			<div class="flex flex-col gap-[40px]">
+				<Carrousel client:only="react" images={MEDIA_IMAGES} /> 
 				<Carrousel client:only="react" images={MEDIA_IMAGES} /> 
 		</header>
 		<!--aqui empeizo la segunda seccion -->
