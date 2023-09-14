@@ -7,10 +7,15 @@ module.exports = {
 				primary: '#9747FF',
 				secondary: '#2D2D2C'
 			},
+			backgroundImage: {
+				'image-banner': "url('/fondo.banner.svg')"},
+				
 			fontFamily: {
 				ceraBold: "'Cera Bold', serif",
 				ceraNormal: "'Cera Normal', serif",
 				helvetica: "'Helvetica', serif",
+				ceraThin:"'Cera Thin',serif",
+				ceraLight:"'Cera Light', serif'",
 			},
 			screens: {
 				xs: '450px'
