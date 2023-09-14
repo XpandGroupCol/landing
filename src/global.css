@@ -22,7 +22,7 @@
     }
     @font-face {
         font-family: "Cera Light";
-        src: url("/landing/public/fonts/cera-pro-light.otf") format("opentype");
+        src: url("/fonts/cera-pro-light.otf") format("opentype");
         font-weight: "300";
         
         
