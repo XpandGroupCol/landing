@@ -14,7 +14,7 @@ const Button = ({ text, onClick }) => {
     const words = text.split(' ');
 
     return (
-        <button onClick={onClick} className='bg-white font-ceraBold border-none h-[46px] text-[20px] leading-[42px] w-full rounded-[30px] px-6 flex justify-center items-center whitespace-nowrap'>
+        <button onClick={onClick} className='bg-white font-ceraBold border-none h-[46px] text-[24px] leading-[42px] w-full rounded-[30px] px-6 flex justify-center items-center whitespace-nowrap'>
             {words.length === 2 ? (
                 <>
                     <span className="text-third">{words[0]}</span> 
