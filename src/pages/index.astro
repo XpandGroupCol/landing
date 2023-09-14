@@ -113,18 +113,19 @@ import Carrousel from "../components/carrousel";
 				</div>
 				<!--empiezo texto e imagen -->
 				<div class="flex  w-auto bg-red-500">
-					<div class=" flex w-[820px] flex-col mt-[309px] mr-0 ml-[150px] font-ceraLight bg-red-300">
+					<div class=" flex w-[740px] flex-col mt-[309px] mr-0 ml-[150px] font-ceraLight bg-red-300">
 						<h3 class="text-[60px] flex-shrink-0 font-ceraLight text-primary leading-70" >¡Tu
 							 campaña en medios <br/>
-							<span class="font-ceraBold flex-shrink-0">digitales lista en cuestión 
+							<span class="font-ceraBold flex-shrink-0">digitales lista en cuestión<br/>
 							de minutos!</span></h3>
-							
-							<p class=" mt-[2px] text-primary text-[24px] 
-							font-ceraLight">Con Shareflow,
+						<div class="flex w-[600px] mt-[2px] mb-[36px]">
+							<p class=" text-primary text-[24px] 
+							font-ceraLight leading-33 w-[]">Con Shareflow,
 								 podrás consolidar tu presencia en los 
 								principales medios digitales del país, catapultando
 								 tu marca hacia un nivel superior de reconocimiento
 								  y éxito.</p>
+								</div>	
 								  <WelcomeForm
 								  text="Iniciar Prueba Gratuita"
 								  client:only = "react"
@@ -139,12 +140,13 @@ import Carrousel from "../components/carrousel";
 				   </div>	
 					</div>	
 					<!-- texto abajo -->
-					<div class="flex ml-[333px]">
+					<div class="flex ml-[333px] mt-[117px] mb-[80px]">
 					<p class="font-ceraLight text-primary text-[24px] ">Shareflow te ofrece la oportunidad de destacar en los
-						 medios y plataformas más influyentes del país.</p>	
+						<span class="font-ceraBold"> medios y plataformas más influyentes del país</span>.</p>	
 					</div>
 				
 			<div>
+				<Carrousel client:only="react" images={MEDIA_IMAGES} /> 
 		</header>
 		<!--aqui empeizo la segunda seccion -->
 		<section class="flex bg-primary">
@@ -153,7 +155,7 @@ import Carrousel from "../components/carrousel";
 		
 		
 		
-				<Carrousel client:only="react" images={MEDIA_IMAGES} /> 
+				
 				
 				
 				
