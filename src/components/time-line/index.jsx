@@ -36,12 +36,28 @@ const Tab = () => {
       title: "Ubicación",
       content: (
         <>
-          <img
-            src="path_a_tu_imagen2.jpg"
-            alt="Descripción 2"
-            className="w-32 h-32"
-          />
-          <p>Texto para la pestaña 2</p>
+          <div className="flex bg-purple-800 w-auto">
+            <div className="flex flex-col bg-green-300">
+              <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
+                Selecciona estratégicamente <br /> tu ubicación:
+              </p>
+              <p className="text-[24px] font-ceraLigth text-[#262525] leading-33">
+                <span className="font-ceraBold">La elección del lugar</span>
+                adecuado es crucial en cualquier estrategia de
+                <br /> marketing. Debes escoger cuidadosamente los canales y
+                medios
+                <br /> donde podrás conectar con clientes potenciales y lograr
+                un mayor
+                <br /> reconocimiento de tu marca. Esta decisión estratégica te
+                permitirá
+                <br /> posicionarte de manera efectiva en la mente de tu público
+                objetivo.
+              </p>
+            </div>
+            <div className="flex">
+              <img src="texto.webp" className="w-[588px] ml-[75px]" />
+            </div>
+          </div>
         </>
       ),
     },
@@ -62,7 +78,7 @@ const Tab = () => {
 
   return (
     <div className="p-8 bg-red-400">
-      <div className="flex  space-x-[0] bg-blue-400 tems-center">
+      <div className="flex  space-x-[0] bg-blue-400 tems-center justify-center">
         {tabs.map((tab, index) => (
           <div className="flex flex-col items-center  ">
             <button
@@ -71,7 +87,7 @@ const Tab = () => {
               className={`w-[40px] h-[40px] flex items-center justify-center rounded-full ml-[45px] mr-[45px]
                ${
                  activeTab === index
-                   ? "bg-fourth text-white"
+                   ? "bg-fourth text-white "
                    : "bg-[#cfc5de] text-[gray-200] "
                }`}
             >
