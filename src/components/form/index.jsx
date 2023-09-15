@@ -15,9 +15,8 @@ import { BASE_URL } from "../../config/lists";
 const WelcomeForm = ({
   text = "¡Inicia tu Campaña!",
   className = "",
-  email,
-  type,
-  textType,
+  email = "",
+  type = "",
 }) => {
   const [open, setOpen] = useState(false);
   const {
@@ -82,7 +81,7 @@ const WelcomeForm = ({
     <>
       <ToastContainer theme="colored" />
       <div className={`w-full xs:max-w-[320px]  ${className}`}>
-        <Button type={type} textType={textType} onClick={handleOpen}>
+        <Button type={type} onClick={handleOpen}>
           {text}
         </Button>
       </div>
