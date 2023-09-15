@@ -8,12 +8,27 @@ const Tab = () => {
       title: "Público",
       content: (
         <>
-          <img
-            src="path_a_tu_imagen1.jpg"
-            alt="Descripción 1"
-            className="w-32 h-32"
-          />
-          <p>Texto para la pestaña 1</p>
+          <div className="flex bg-purple-800 w-auto">
+            <div className="flex flex-col">
+              <p className="font-ceraBold text-third text-[60px]">
+                Determina con precisión
+                <br /> a quién deseas llegar:
+              </p>
+              <p className="font-[24px] font-ceraLigth">
+                <span className="font-[ceraBold]"> En primer lugar,</span>
+                Shareflow permite definir con claridad
+                <br /> a tu audiencia objetivo. Establece con minuciosidad la
+                segmentación
+                <br /> de tu campaña, y nosotros nos encargaremos de adaptar
+                cada <br />
+                elemento para que se ajuste perfectamente a los objetivos de
+                <br /> tu marca.
+              </p>
+            </div>
+            <div className="flex">
+              <img src="texto.webp" className="w-[588px]" />
+            </div>
+          </div>
         </>
       ),
     },
