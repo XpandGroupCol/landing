@@ -11,7 +11,7 @@ export default Button
  
 */
 const BUTTON_TYPE = {
-  primary: "bg-[#E62057]",
+  primary: "bg-[#E62057] text-[]",
   secondary: "bg-[#5F4092]",
   default: "bg-white text-gray-300",
 };
