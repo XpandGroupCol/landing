@@ -3,7 +3,7 @@ import "../global.css";
 import Iconoequis from "../components-astro/Iconoequis.astro";
 import WelcomeForm from "../components/form";
 import Tab from "../components/time-line";
-import Input from "../components/input";
+import EmailInput from "../components/email-input";
 //import RecomendationCard from "../components/recomendation-card.astro";
 //import AllCard from "../components/all-card.astro";
 //import CountDown from "../components/countdown";
@@ -144,8 +144,7 @@ import Carrousel from "../components/carrousel";
             </p>
 			
           </div>
-          <WelcomeForm text="Iniciar Prueba Gratuita" client:only="react" />
-          <Input />
+          <EmailInput client:only="react"/>
         </div>
         <!--empiezo  imagen -->
         <picture
@@ -184,7 +183,7 @@ import Carrousel from "../components/carrousel";
         <Tab client:only="react" />
       </div>
       <div>
-        <WelcomeForm text="¡Inicia tu Campaña!" client:only="react" />
+        <WelcomeForm text="¡Inicia tu Campaña!" type="secondary" client:only="react" />
       </div>
     </section>
     <section class="flex flex-col bg-[#5F4092] items-center">
