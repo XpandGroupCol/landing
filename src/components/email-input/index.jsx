@@ -11,7 +11,11 @@ const EmailInput = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <WelcomeForm text="Iniciar Prueba Gratuita" email={email} />
+      <WelcomeForm
+        text="Iniciar Prueba Gratuita"
+        type="primary"
+        email={email}
+      />
     </div>
   );
 };

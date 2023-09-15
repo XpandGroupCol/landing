@@ -10,6 +10,7 @@
 export default Button
  
 */
+// el crea un objeto con los colores
 const BUTTON_TYPE = {
   primary: "bg-[#E62057]",
   secondary: "bg-[#5F4092]",
