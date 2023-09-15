@@ -9,13 +9,13 @@ const Tab = () => {
       content: (
         <>
           <div className="flex bg-purple-800 w-auto">
-            <div className="flex flex-col">
-              <p className="font-ceraBold text-third text-[60px]">
+            <div className="flex flex-col bg-green-300">
+              <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
                 Determina con precisión
                 <br /> a quién deseas llegar:
               </p>
-              <p className="font-[24px] font-ceraLigth">
-                <span className="font-[ceraBold]"> En primer lugar,</span>
+              <p className="text-[24px] font-ceraLigth text-[#262525] leading-33">
+                <span className="font-ceraBold">En primer lugar, </span>
                 Shareflow permite definir con claridad
                 <br /> a tu audiencia objetivo. Establece con minuciosidad la
                 segmentación
@@ -26,7 +26,7 @@ const Tab = () => {
               </p>
             </div>
             <div className="flex">
-              <img src="texto.webp" className="w-[588px]" />
+              <img src="texto.webp" className="w-[588px] ml-[75px]" />
             </div>
           </div>
         </>
