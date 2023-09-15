@@ -85,7 +85,7 @@ import Carrousel from "../components/carrousel";
         width="0"
         style="display:none;visibility:hidden"></iframe></noscript
     >
-    <header class="bg-image-banner">
+    <header class="bg-image-banner pb-10">
       <div class="flex text-secondary w-full py-[54px] px-[92px]">
         <div class=" flex-1 flex items-center justify-between">
           <picture class="">
@@ -142,6 +142,7 @@ import Carrousel from "../components/carrousel";
               medios digitales del país, catapultando tu marca hacia un nivel
               superior de reconocimiento y éxito.
             </p>
+			
           </div>
           <WelcomeForm text="Iniciar Prueba Gratuita" client:only="react" />
           <Input />
@@ -166,9 +167,9 @@ import Carrousel from "../components/carrousel";
         </p>
       </div>
 
-      <div class="flex flex-col gap-[40px] mb-[35px]">
+      <div class="max-w-[1360px] m-auto   mb-[35px] rounded-2xl overflow-hidden">
         <Carrousel client:only="react" images={MEDIA_IMAGES} />
-        <Carrousel client:only="react" images={MEDIA_IMAGES} />
+        <Carrousel client:only="react" images={MEDIA_IMAGES} left />
       </div>
     </header>
     <!--aqui empiezo la segunda seccion -->

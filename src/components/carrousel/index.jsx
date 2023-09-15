@@ -56,9 +56,9 @@ const properties = {
   ],
 };
 
-const Carrousel = ({ images, config = {} }) => {
+const Carrousel = ({ images, config = {}, left = false }) => {
   return (
-    <div className="w-full bg-white  py-2 px-20">
+    <div className={`${left ? "slide-left" : ""} w-full bg-white  py-2 px-20`}>
       <Slide {...{ ...properties, ...config }}>
         {images.map(({ src, name }) => (
           <div

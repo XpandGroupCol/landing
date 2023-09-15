@@ -34,4 +34,11 @@
         font-weight: "100";
        
     }
+   
+} 
+.slide-left{
+    transform: rotate(180deg) !important;
+}
+.slide-left .each-slide-effect{
+    transform: rotate(-180deg) !important;
 }
