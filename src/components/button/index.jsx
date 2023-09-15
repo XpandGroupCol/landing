@@ -15,12 +15,24 @@ const BUTTON_TYPE = {
   secondary: "bg-[#5F4092]",
   default: "bg-white",
 };
-const Button = ({ children, onClick, type = "default" }) => {
+//creo el objeto
+const TEXT_TYPE = {
+  primary: "text-[#E62057]",
+  secondary: "text-[#5F4092]",
+  default: "text-white",
+};
+const Button = ({
+  children,
+  onClick,
+  type = "default",
+  textType = "default",
+}) => {
   const bgcolor = BUTTON_TYPE[type];
+  const textcolor = TEXT_TYPE[textType];
   return (
     <button
       onClick={onClick}
-      className={`${bgcolor} font-ceraBold border-none h-[46px] text-[24px] leading-[42px] w-full rounded-[30px] px-6 flex justify-center items-center whitespace-nowrap`}
+      className={`${textcolor}${bgcolor} font-ceraBold border-none h-[46px] text-[24px] leading-[42px] w-full rounded-[30px] px-6 flex justify-center items-center whitespace-nowrap`}
     >
       {children}
     </button>

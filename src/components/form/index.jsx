@@ -17,6 +17,7 @@ const WelcomeForm = ({
   className = "",
   email,
   type,
+  textType,
 }) => {
   const [open, setOpen] = useState(false);
   const {
@@ -81,7 +82,7 @@ const WelcomeForm = ({
     <>
       <ToastContainer theme="colored" />
       <div className={`w-full xs:max-w-[320px]  ${className}`}>
-        <Button type={type} onClick={handleOpen}>
+        <Button type={type} textType={textType} onClick={handleOpen}>
           {text}
         </Button>
       </div>
