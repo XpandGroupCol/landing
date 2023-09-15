@@ -1,18 +1,18 @@
 ---
 import "../global.css";
-import Iconoequis from "../components-astro/Iconoequis.astro"
+import Iconoequis from "../components-astro/Iconoequis.astro";
 import WelcomeForm from "../components/form";
-import Tab from "../components/time-line"
+import Tab from "../components/time-line";
 import Input from "../components/input";
 //import RecomendationCard from "../components/recomendation-card.astro";
 //import AllCard from "../components/all-card.astro";
 //import CountDown from "../components/countdown";
 import {
-	ALL_IN_ONE,
-	customConfig,
-	MAKE_IT_HAPPEN,
-	MEDIA_IMAGES,
-	MEDIOS_IMAGES,
+  ALL_IN_ONE,
+  customConfig,
+  MAKE_IT_HAPPEN,
+  MEDIA_IMAGES,
+  MEDIOS_IMAGES,
 } from "../config/lists";
 import MediaLogos from "../components/media-logos.astro";
 
@@ -20,169 +20,178 @@ import Carrousel from "../components/carrousel";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Shareflow</title>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Shareflow</title>
 
-		<script>
-			(function (h, o, t, j, a, r) {
-				h.hj =
-					h.hj ||
-					function () {
-						(h.hj.q = h.hj.q || []).push(arguments);
-					};
-				h._hjSettings = { hjid: 2995590, hjsv: 6 };
-				a = o.getElementsByTagName("head")[0];
-				r = o.createElement("script");
-				r.async = 1;
-				r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-				a.appendChild(r);
-			})(
-				window,
-				document,
-				"https://static.hotjar.com/c/hotjar-",
-				".js?sv="
-			);
-		</script>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2995590, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-0DKPWLX1P9"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DKPWLX1P9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-			gtag("config", "G-0DKPWLX1P9");
-		</script>
+      gtag("config", "G-0DKPWLX1P9");
+    </script>
 
-		<script>
-			(function (w, d, s, l, i) {
-				w[l] = w[l] || [];
-				w[l].push({
-					"gtm.start": new Date().getTime(),
-					event: "gtm.js",
-				});
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != "dataLayer" ? "&l=" + l : "";
-				j.async = true;
-				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-				f.parentNode.insertBefore(j, f);
-			})(window, document, "script", "dataLayer", "GTM-WGC42PH");
-		</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WGC42PH");
+    </script>
 
-		<script
-			id="ze-snippet"
-			src="https://static.zdassets.com/ekr/snippet.js?key=05ed8143-c9b3-4762-805f-5dc5694d390b"
-		></script>
-	</head>
-	<body >
-		<noscript
-			><iframe
-				src="https://www.googletagmanager.com/ns.html?id=GTM-WGC42PH"
-				height="0"
-				width="0"
-				style="display:none;visibility:hidden"></iframe></noscript
-		>
-		<header class="bg-image-banner">
-			<div class="flex text-secondary w-auto pt-[72px] pb-[50px] px-[40px]">
-				<div class="mt-[56px] pl-[0] ml[95px]">
-					<img src="logo-white.svg" alt="logo shareflow" class="w-[217px] h-[auto]" />
-				</div>
-				<section>
-				<div class="flex-grow flex w-full mt-[67px]  pl-[150px] gap-14">
-					<div class="flex">
-						<h3 class="font-ceraLight leading-[22.63px] text-[18px] flex-shrink-0">Paso a paso <span class="font-ceraBold">Campaña</span></h3>
-					</div>
-					<div class="flex">
-						<h3 class="flex-shrink-0 leading-[22.63px] font-ceraLight text-[18px] mr[28px]">Beneficios <span class="font-ceraBold">Shareflow</span></h3>
-					</div>
-					<div class= "flex-shrink-0 flex justify-end  items-center w-auto ml-[500px] gap-2  ">
-						<h3 class="font-ceraLight text-[24px] flex-shrink-0 pr-2">Iniciar <span class="font-ceraBold">Sesion</span></h3>
-						<WelcomeForm
-								text="Prueba Gratis"
-								client:only="react"
-							/>
-					</div>
-				</div>
-				</div>
-				<!--empiezo texto e imagen -->
-				<div class="flex  w-auto">
-					<div class=" flex w-[740px] flex-col mt-[309px] mr-0 ml-[150px] font-ceraLight">
-						<h3 class="text-[60px] flex-shrink-0 font-ceraLight
-						 text-primary leading-70" >¡Tu
-							 campaña en medios <br/>
-							<span class="font-ceraBold flex-shrink-0">digitales lista en cuestión<br/>
-							de minutos!</span></h3>
-						<div class="flex w-[600px] mt-[2px] mb-[36px]">
-							<p class=" text-primary text-[24px] 
-							font-ceraLight leading-33 w-[]">Con Shareflow,
-								 podrás consolidar tu presencia en los 
-								principales medios digitales del país, catapultando
-								 tu marca hacia un nivel superior de reconocimiento
-								  y éxito.</p>
-								</div>	
-								  <WelcomeForm
-								  text="Iniciar Prueba Gratuita"
-								  client:only = "react"/>
-								  <Input/>
+    <script
+      id="ze-snippet"
+      src="https://static.zdassets.com/ekr/snippet.js?key=05ed8143-c9b3-4762-805f-5dc5694d390b"
+    ></script>
+  </head>
+  <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WGC42PH"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <header class="bg-image-banner">
+      <div class="flex text-secondary w-full py-[54px] px-[92px]">
+        <div class=" flex-1 flex items-center justify-between">
+          <picture class="">
+            <img
+              src="logo-white.svg"
+              alt="logo shareflow"
+              class="w-[217px] h-[auto]"
+            />
+          </picture>
+          <div class="flex items-center gap-16">
+            
+              <h3
+                class="font-ceraLight leading-[22.63px] text-[18px]"
+              >
+                Paso a paso <span class="font-ceraBold">Campaña</span>
+              </h3>
+            
+            
+              <h3
+                class="leading-[22.63px] font-ceraLight text-[18px] "
+              >
+                Beneficios <span class="font-ceraBold">Shareflow</span>
+             
+            </div>
+          </div>
+         
+        
+		<div class="flex-1 flex justify-end items-center gap-4">
+            <h3 class="font-ceraLight text-[24px] flex-shrink-0 pr-2">
+              Iniciar <span class="font-ceraBold">Sesion</span>
+            </h3>
+            <WelcomeForm text="Prueba Gratis" client:only="react" />
+          </div>
+      </div>
+      <!--empiezo texto e imagen -->
+      <div class="flex m-auto max-w-[1360px] gap-12 ">
+        <div
+          class="flex w-[50%]  flex-col pt-[200px]  font-ceraLight"
+        >
+          <h3
+            class="text-[54px]  font-ceraLight
+						 text-primary leading-70"
+          >
+            ¡Tu campaña en medios 
+            <span class="font-ceraBold "
+              >digitales lista en cuestión
+               de minutos!</span
+            >
+          </h3>
+          <div class="flex w-[600px] mt-[2px] mb-[36px]">
+            <p class="text-primary text-[24px]
+							font-ceraLight leading-33 w-[]">
+              Con Shareflow, podrás consolidar tu presencia en los principales
+              medios digitales del país, catapultando tu marca hacia un nivel
+              superior de reconocimiento y éxito.
+            </p>
+          </div>
+          <WelcomeForm text="Iniciar Prueba Gratuita" client:only="react" />
+          <Input />
+        </div>
+        <!--empiezo  imagen -->
+        <picture
+          class="w-[50%] pt-[50px] "
+        >
+          <img
+            src="phone.banner.png"
+            class=""
+          />
+        </picture>
+      </div>
+      <!-- texto abajo -->
+      <div class="flex ml-[333px] mt-[117px] mb-[80px]">
+        <p class="font-ceraLight text-primary text-[24px]">
+          Shareflow te ofrece la oportunidad de destacar en los
+          <span class="font-ceraBold">
+            medios y plataformas más influyentes del país</span
+          >
+        </p>
+      </div>
 
-				
-					</div>
-					<!--empiezo  imagen -->
-					<div class="flex-shrink-0 hidden lg:block lg:w-[500px] lg:xl:aspect-[500/500]
-					xl:w-[700px] xl:aspect-[700/700]">
-					   <img src="phone.banner.png"
-					   class=" ml-[57px] mr- mt-[152px] w-[728px]"/>
-					   
-				   </div>	
-					</div>	
-					<!-- texto abajo -->
-					<div class="flex ml-[333px] mt-[117px] mb-[80px]">
-					<p class="font-ceraLight text-primary text-[24px] ">Shareflow te ofrece la oportunidad de destacar en los
-						<span class="font-ceraBold"> medios y plataformas más influyentes del país</span></p>	
-					</div>
-				
-			<div class="flex flex-col gap-[40px] mb-[35px]">
-				<Carrousel client:only="react" images={MEDIA_IMAGES} /> 
-				<Carrousel client:only="react" images={MEDIA_IMAGES} />
-			</div> 
-		</header>
-		<!--aqui empiezo la segunda seccion -->
-		<section class="flex-col bg-primary flex justify-center items-center">
-			<div class="flex text-center mt-[85px] mb-[77px]">
-				<h3 class="font-ceraLight text-[60px] leading-33 text-third">¿Cómo crear
-					<span class="font-ceraBold text-black">tu campaña?</span> </h3>
-		</div>
-   <div class="flex justify-center items-center"> 
-    <Tab client:only ="react"/>
-  </div>
-  <div>
-
-    <WelcomeForm 
-    text="¡Inicia tu Campaña!"
-    client:only="react"/>
-  </div>    
-		</section>
-    <section class=" flex flex-col  bg-[#5F4092] items-center" >
-      <div class="flex bg-[#E62057] w-[829px] mt-[122px]">
-      <h4>Con otras Opciones</h4>
-	  <p>¡Controla tus campañas!</p>
-      <Iconoequis/>
-	  
-	</div>
-      
-
+      <div class="flex flex-col gap-[40px] mb-[35px]">
+        <Carrousel client:only="react" images={MEDIA_IMAGES} />
+        <Carrousel client:only="react" images={MEDIA_IMAGES} />
+      </div>
+    </header>
+    <!--aqui empiezo la segunda seccion -->
+    <section class="flex-col bg-primary flex justify-center items-center">
+      <div class="flex text-center mt-[85px] mb-[77px]">
+        <h3 class="font-ceraLight text-[60px] leading-33 text-third">
+          ¿Cómo crear
+          <span class="font-ceraBold text-black">tu campaña?</span>
+        </h3>
+      </div>
+      <div class="flex justify-center items-center">
+        <Tab client:only="react" />
+      </div>
+      <div>
+        <WelcomeForm text="¡Inicia tu Campaña!" client:only="react" />
+      </div>
     </section>
-		
-				
-			</body>
-		</html>
+    <section class="flex flex-col bg-[#5F4092] items-center">
+      <div class="flex bg-[#E62057] w-[829px] mt-[122px]">
+        <h4>Con otras Opciones</h4>
+
+        <Iconoequis /><p>¡Controla tus campañas!</p>
+      </div>
+    </section>
+  </body>
+</html>
