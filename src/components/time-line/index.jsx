@@ -8,8 +8,8 @@ const Tab = () => {
       title: "Público",
       content: (
         <>
-          <div className="flex bg-purple-800 w-auto">
-            <div className="flex flex-col bg-green-300">
+          <div className="flex w-auto">
+            <div className="flex flex-col">
               <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
                 Determina con precisión
                 <br /> a quién deseas llegar:
@@ -36,8 +36,8 @@ const Tab = () => {
       title: "Ubicación",
       content: (
         <>
-          <div className="flex bg-purple-800 w-auto">
-            <div className="flex flex-col bg-green-300">
+          <div className="flex  w-auto">
+            <div className="flex flex-col ">
               <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
                 Selecciona estratégicamente <br /> tu ubicación:
               </p>
@@ -65,8 +65,8 @@ const Tab = () => {
       title: "Mensaje",
       content: (
         <>
-          <div className="flex bg-purple-800 w-auto">
-            <div className="flex flex-col bg-green-300">
+          <div className="flex w-auto">
+            <div className="flex flex-col">
               <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
                 Potencia tu mensaje <br /> con creatividad:
               </p>
@@ -92,8 +92,8 @@ const Tab = () => {
   ];
 
   return (
-    <div className="p-8 bg-red-400">
-      <div className="flex  space-x-[0] bg-blue-400 tems-center justify-center">
+    <div className="p-8">
+      <div className="flex  tems-center justify-center">
         {tabs.map((tab, index) => (
           <div className="flex flex-col items-center  ">
             <button
