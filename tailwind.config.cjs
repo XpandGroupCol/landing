@@ -7,6 +7,7 @@ module.exports = {
         primary: "#FFFFFF",
         secondary: "#D9D9D9",
         third: "#E62057",
+        fourth: "#5F4092",
       },
       backgroundImage: {
         "image-banner": "url('/fondo.banner.svg')",
