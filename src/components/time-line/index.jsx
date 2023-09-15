@@ -42,7 +42,7 @@ const Tab = () => {
                 Selecciona estratégicamente <br /> tu ubicación:
               </p>
               <p className="text-[24px] font-ceraLigth text-[#262525] leading-33">
-                <span className="font-ceraBold">La elección del lugar</span>
+                <span className="font-ceraBold">La elección del lugar </span>
                 adecuado es crucial en cualquier estrategia de
                 <br /> marketing. Debes escoger cuidadosamente los canales y
                 medios
@@ -65,12 +65,27 @@ const Tab = () => {
       title: "Mensaje",
       content: (
         <>
-          <img
-            src="path_a_tu_imagen3.jpg"
-            alt="Descripción 3"
-            className="w-32 h-32"
-          />
-          <p>Texto para la pestaña 3</p>
+          <div className="flex bg-purple-800 w-auto">
+            <div className="flex flex-col bg-green-300">
+              <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
+                Potencia tu mensaje <br /> con creatividad:
+              </p>
+              <p className="text-[24px] font-ceraLigth text-[#262525] leading-33">
+                <span className="font-ceraBold">La creatividad </span>es el
+                motor que impulsa el éxito de
+                <br /> cualquier campaña. Agrega videos e imágenes de alta
+                calidad
+                <br /> que no solo aporten valor, sino que también <br />
+                generen una impresión duradera. Estos elementos
+                <br /> visuales no solo aumentarán tu visibilidad,
+                <br /> sino que también reforzarán el posicionamiento de
+                <br /> tu marca en la mente de tus clientes potenciales.
+              </p>
+            </div>
+            <div className="flex">
+              <img src="texto.webp" className="w-[588px] ml-[75px]" />
+            </div>
+          </div>
         </>
       ),
     },
