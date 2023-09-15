@@ -13,14 +13,10 @@ export default Button
 const BUTTON_TYPE = {
   primary: "bg-[#E62057]",
   secondary: "bg-[#5F4092]",
-  default: "bg-white",
+  default: "bg-white text-gray-300",
 };
 //creo el objeto
-const TEXT_TYPE = {
-  primary: "text-[#E62057]",
-  secondary: "text-[#5F4092]",
-  default: "text-white",
-};
+
 const Button = ({
   children,
   onClick,
