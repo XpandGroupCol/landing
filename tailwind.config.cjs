@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        //blanco
         primary: "#FFFFFF",
+        //blanco grisaceo
         secondary: "#D9D9D9",
+        //fucsia
         third: "#E62057",
+        //morado
         fourth: "#5F4092",
       },
       backgroundImage: {
