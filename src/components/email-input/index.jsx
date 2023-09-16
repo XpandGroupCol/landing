@@ -13,7 +13,7 @@ const EmailInput = () => {
       />
       <WelcomeForm
         text="Iniciar Prueba Gratuita"
-        type="primary"
+        type="secondary"
         email={email}
       />
     </div>

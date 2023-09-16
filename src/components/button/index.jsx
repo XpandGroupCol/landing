@@ -1,33 +1,38 @@
-/*const Button = ({text, onClick}) => {
-    return (
-        <button onClick={onClick}
-         className='bg-white font-ceraBold border-none text-third   h-[48px] text-[20px] leading-[42px] w-full rounded-[37px] px-6 flex justify-center items-center whitespace-nowrap'>
-            {text}
-        </button>
-    )
-}
-
-export default Button
- 
-*/
 const BUTTON_TYPE = {
-  primary: "bg-[#E62057] text-[]",
-  secondary: "bg-[#5F4092]",
-  default: "bg-white text-gray-300",
+  // boton blanco con primer texto negro y segundo rosado
+  primary: {
+    bg: "bg-[white]",
+    text: ["text-black ", "text-[#E62057] font-ceraBold"],
+  },
+  //boton fucsia y letra blanca, ultima con bold
+  secondary: {
+    bg:"bg-[#E62057]",
+    text: ["font-ceraLight", "font-ceraLight","font-ceraBold"],
+  },
+
+    third: {
+    bg: "bg-[#5F4092]",
+    text: ["text-black font-ceraLight", "text-[#5F4092] font-ceraBold",],
+  },
+  default: {
+    bg: "bg-white",
+    text: ["text-gray-300 font-ceraLight", "text-gray-300 font-ceraBold"],
+  },
 };
 //creo el objeto
 
 const Button = ({ children, onClick, type = "default" }) => {
-  const bgcolor = BUTTON_TYPE[type] || BUTTON_TYPE.default;
+  const words = children.split(' ');
+  const config = BUTTON_TYPE[type] || BUTTON_TYPE.default;
 
   return (
-    <button
-      onClick={onClick}
-      className={`${bgcolor} font-ceraBold border-none h-[46px] text-[24px] leading-[42px] w-full rounded-[30px] px-6 flex justify-center items-center whitespace-nowrap`}
-    >
-      {children}
+    <button onClick={onClick} className={`${config.bg} text-[white] font-ceraLigth border-none h-[46px] text-[24px] leading-[42px] w-full rounded-[30px] px-6 flex justify-center items-center whitespace-nowrap`}>
+      {words.map((word, index) => (
+        <span key={index} className={config.text[index]}>
+          {word + (index !== words.length - 1 ? " " : " ")}
+        </span>
+      ))}
     </button>
   );
 };
-
-export default Button;
+export default Button 
