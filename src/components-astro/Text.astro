@@ -1,8 +1,14 @@
 ---
-import Iconoequis from "./Iconoequis.astro";
+import { IconWhite } from '../config/lists.js';
+import Iconoequis from './Iconoequis.astro';
+
+//import "../global.css"
 ---
-<div>
-   <h3>Con otras Opciones</h3> 
+<div class="bg-third flex items-center space-x-2" >
+   <!-- <img src="/x-solidWhite.svg"  alt="Descripción del ícono">-->
+   <Iconoequis/> <h3>Con otras Opciones</h3> 
+   
+
    <p>¡Controla tus campañas!</p>
    <p>Maneja todas tus campañas de marketing en una sola plataforma. Realiza el seguimiento del desempeño que estás teniendo en tu marca.</p>
 </div>

@@ -62,9 +62,13 @@ export const MEDIOS_IMAGES = [
     { name: 'spotify', src: 'spotify.svg' },
     { name: 'shock', src: 'shock.svg' },
     { name: 'el.espectador', src: 'el.espectador.svg' },
+   
     
    
 ]
+// En lists.js
+export const IconWhite = { name:'x-solidWhite', src:'x-solidWhite.svg' };
+
 
 export const customConfig = {
     slidesToShow: 1,
