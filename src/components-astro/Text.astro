@@ -1,14 +1,73 @@
 ---
-import { IconWhite } from '../config/lists.js';
-import Iconoequis from './Iconoequis.astro';
+import Checkicon from "./checkicon.astro";
+import Iconoequis from "./iconoequis.astro";
+import "../global.css";
 
 //import "../global.css"
 ---
-<div class="bg-third flex items-center space-x-2" >
-   <!-- <img src="/x-solidWhite.svg"  alt="Descripción del ícono">-->
-   <Iconoequis/> <h3>Con otras Opciones</h3> 
-   
 
-   <p>¡Controla tus campañas!</p>
-   <p>Maneja todas tus campañas de marketing en una sola plataforma. Realiza el seguimiento del desempeño que estás teniendo en tu marca.</p>
+<div class="flex pl-[144px] pt-[122px] gap-[36px] bg-fourth">
+  <!-- este es el div fucsia -->
+  <div class="bg-third flex flex-col flex-1 font-ceraligth text-[20px] text-primary pl-[44px] pt-[52px] pb-[43px] pr-[66px] gap-[39px] rounded-[28px]"
+  >
+    <h3 class="text-[40px]">
+      Con otras <span class="font-ceraBold">Opciones</span>
+    </h3>
+    <div class="flex gap-[8px] items-center">
+      <Iconoequis />
+      <p class="font-ceraBold text-[25px]">¡Controla tus campañas!</p>
+    </div>
+    <p class="font-ceraligth text-[20px]">
+      • <span class="font-ceraBold">Maneja todas tus campañas</span> de
+      marketing en una sola plataforma. • Realiza el seguimiento del desempeño
+      que estás teniendo en tu marca.
+    </p>
+    <div class="flex gap-[8px] items-center">
+      <Iconoequis />
+      <h4 class="font-ceraBold text-[25px]">
+        ¡Maneja tu estrategia con éxito!
+      </h4>
+    </div>
+    <p>
+      • Gestiona tu plan de marketing con los mejores lineamientos.
+       • Recibe recomendaciones que te ayudarán a llegar a más clientes. que harán crecer
+      tu negocio.
+    </p>
+    <div class="flex gap-[8px] items-center">
+    <Iconoequis />
+    <h4 class="font-ceraBold text-[25px]">¡Conoce tus datos!</h4>
+   </div>
+    <p>
+      • Analiza el resultado de tu campaña y el comportamiento de tus clientes.
+      • Obten los enfoques que debes tener para guiar a tu negocio al
+      crecimiento y cumplimiento de objetivos.
+    </p>
+  </div>
+
+  <!--el otro cuadro -->
+  <div class="bg-white flex-1 pr-[113px]">
+    <h3>Con Shareflow</h3>
+    <h4>¡Controla tus campañas!</h4>
+    <p>
+      • Maneja todas tus campañas de marketing en una sola plataforma. • Realiza
+      el seguimiento del desempeño que estás teniendo en tu marca.
+    </p>
+    <Checkicon />
+    <h4>¡Maneja tu estrategia con éxito!</h4>
+    <p>
+      • Gestiona tu plan de marketing con los mejores lineamientos. • Recibe
+      recomendaciones que te ayudarán a llegar a más clientes. que harán crecer
+      tu negocio.
+    </p>
+    <Checkicon />
+    <h4>¡Conoce tus datos!</h4>
+    <p>
+      • Analiza el resultado de tu campaña y el comportamiento de tus clientes.
+      • Obten los enfoques que debes tener para guiar a tu negocio al
+      crecimiento y cumplimiento de objetivos.
+    </p>
+  </div>
 </div>
+<!-- 
+
+-->
