@@ -11,6 +11,10 @@ const BUTTON_TYPE = {
     bg: "bg-[white]",
     text: ["text-black font-ceraLight", "text-black ", "text-[#E62057] font-ceraBold"],
   },
+  fourth: {
+    bg: "bg-[#5F4092]",
+    text: [" font-ceraLight", "text-[white] ", " font-ceraBold"],
+  },
   default: {
     bg: "bg-white",
     text: ["text-gray-300 font-ceraLight", "text-gray-300 font-ceraBold"],
