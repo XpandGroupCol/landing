@@ -1,4 +1,5 @@
 ---
+import Numbers from "../components-astro/numbers.astro"
 import "../global.css";
 import Text from "../components-astro/text.astro";
 import WelcomeForm from "../components/form";
@@ -192,7 +193,11 @@ import Carrousel from "../components/carrousel";
          </div>
          <WelcomeForm text="Iniciar Prueba Gratuita" type="third"
          client:only="react"/>
-   
   </section>
+ <section >
+ <Numbers/> 
+  
+</section> 
+
   </body>
 </html>
