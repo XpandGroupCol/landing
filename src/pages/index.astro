@@ -204,35 +204,53 @@ import Carrousel from "../components/carrousel";
 </section> 
 <!--aqui empiezo la ultima seccion -->
 
-<footer class="bg-image-banner flex pt-[98px] justify-center ">
-  <!-- cuadro uno -->
-  <div class="flex flex-col w-[32%] bg-slate-500 pr-[5%] ">
-  <picture class="">
-    <img
-      src="logo-white.svg"
-      alt="logo shareflow"
-      class="w-[217px] h-[auto]"
-    />
-  </picture>
-  <div class="bg-black">
-   <p class="text-white text-[24px]">Con Shareflow, podrás consolidar tu presencia en los principales medios digitales del país, catapultando tu marca hacia un nivel superior de reconocimiento y éxito.</p> 
+<footer class="bg-image-banner  pt-[98px] justify-center items-center">
+  <div class="flex ">
+  <!-- Cuadro uno -->
+  <div class="flex flex-col w-[42%] bg-slate-500">
+    <picture class="">
+      <img
+        src="logo-white.svg"
+        alt="logo shareflow"
+        class="w-[217px] h-[auto]"
+      />
+    </picture>
+    <div class="bg-black flex pb-[29px]">
+      <p class="text-white text-[24px]">Con Shareflow, podrás consolidar tu presencia en los principales medios digitales del país, catapultando tu marca hacia un nivel superior de reconocimiento y éxito.</p>
+    </div>
+    <EmailInput client:only="react" />
   </div>
-  <EmailInput client:only="react"/>
+  <!-- Cuadro dos -->
+  <div class="flex fle-col bg-slate-200 w-[54%] ">
+    <picture class="">
+      <img
+        src="logo-white.svg"
+        alt="logo shareflow"
+        class="w-[965px] h-[auto] opacity-20"
+      />
+    </picture>
+    
+  </div>
+  
 </div>
-<!-- cuadro dos -->
-<div class="flex fle-col bg-slate-200 w-[54%]">
-  <picture class="">
-    <img
-      src="logo-white.svg"
-      alt="logo shareflow"
-      class="w-[965px] h-[auto] opacity-20	"
-    />
-
+<!-- parte final la linea-->
+<div class="flex flex-col pt[80px] justify-center w-[90%] items-center">
+  <div class=" flex text-red-300 opacity-[50%] border-[1px] w-[100%]">
+  </div>
 </div>
-<!-- parte final-->
-
-
+ <!--container redes y politicas de privacidad --> 
+ <div class="flex pt-[30px]">
+  <p>© 2023 Shareflow. Todos los derechos reservados.</p>
+</div>
+<div class="flex">
+  <p>Políticas de Privacidad</p>
+</div>
+<line class="text-[red-200]"/>
+  
 
 </footer>
+
+
+
   </body>
 </html>
