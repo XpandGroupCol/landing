@@ -172,7 +172,7 @@ import Carrousel from "../components/carrousel";
       </div>
     </header>
     <!--aqui empiezo la segunda seccion -->
-    <section class="flex-col bg-primary flex justify-center items-center">
+    <section class="flex-col bg-primary flex justify-center items-center pb-[87px]">
       <div class="flex text-center mt-[85px] mb-[77px]">
         <h3 class="font-ceraLight text-[60px] leading-33 text-third">
           ¿Cómo crear
@@ -185,10 +185,14 @@ import Carrousel from "../components/carrousel";
       <div>
         <WelcomeForm text="¡Inicia  tu  Campaña!" type="secondary" client:only="react" />
       </div>
-    </section>
-    <section class="flex flex-col bg-[#5F4092]  items-center">
+    </section >
+    <section class="flex flex-col bg-[#5F4092] items-center pl-[60px] pr-[60px]  pb-[130px]">
+    <div class="flex  items-center pt-[122px] gap-[30px] pb-[80px] ">
       <Text/>
-     
-    </section>
+         </div>
+         <WelcomeForm text="Iniciar Prueba Gratuita" type="third"
+         client:only="react"/>
+   
+  </section>
   </body>
 </html>
