@@ -1,23 +1,3 @@
-/*
-
-export const MEDIOS_IMAGES = [
-    { name: 'la.republica', src: 'la.republica.svg' },
-    { name: 'caracol', src: 'caracol.svg' },
-    { name: 'minuto.30', src: 'minuto.30.svg' },
-    { name: 'pulzo', src: 'pulzo.svg' },
-    { name: 'el.tiempo', src: 'el.tiempo.svg' },
-    { name: 'valora', src: 'valora.svg' },
-    { name: 'publimetro', src: 'publimetro.svg' },
-    { name: 'el.colombiano', src: 'el.colombiano.svg' },
-    { name: 'portafolio', src: 'portafolio.svg' },
-    { name: 'tiktok', src: 'tiktok.svg' },
-    { name: 'spotify', src: 'spotify.svg' },
-    { name: 'shock', src: 'shock.svg' },
-    { name: 'el.espectador', src: 'el.espectador.svg' },
-    
-   
-]
-*/
 
 export const MEDIA_IMAGES = [
   { name: "adn", src: "adn.svg" },

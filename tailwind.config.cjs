@@ -15,6 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         "image-banner": "url('/fondo.banner.svg')",
+        "image-banner-footer": "url('/Maskgroup.webp')"
       },
 
       fontFamily: {
