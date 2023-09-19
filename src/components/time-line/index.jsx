@@ -8,25 +8,26 @@ const Tab = () => {
       title: "Público",
       content: (
         <>
-          <div className="flex w-auto">
+          <div className="flex w-auto xs:flex-col">
             <div className="flex flex-col">
-              <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
-                Determina con precisión
-                <br /> a quién deseas llegar:
+              <p className="font-ceraBold xs:text-[24px] xs:text-center text-third leading-[73px] text-[60px] mb-[10px] xs:leading-[30px] xs:pb-[16px]">
+                Determina con precisión a quién deseas llegar:
               </p>
-              <p className="text-[24px] font-ceraLigth text-[#262525] leading-33">
-                <span className="font-ceraBold">En primer lugar, </span>
-                Shareflow permite definir con claridad
-                <br /> a tu audiencia objetivo. Establece con minuciosidad la
-                segmentación
-                <br /> de tu campaña, y nosotros nos encargaremos de adaptar
-                cada <br />
-                elemento para que se ajuste perfectamente a los objetivos de
-                <br /> tu marca.
+              <p className="text-[24px] font-ceraLigth text-[#262525] leading-33 xs:text-center">
+                <span className="font-ceraBold xs:text-[24px] ">
+                  En primer lugar,
+                </span>
+                Shareflow permite definir con claridad a tu audiencia objetivo.
+                Establece con minuciosidad la segmentaciónde tu campaña, y
+                nosotros nos encargaremos de adaptar cada elemento para que se
+                ajuste perfectamente a los objetivos de tu marca.
               </p>
             </div>
             <div className="flex">
-              <img src="publico.webp" className="w-[588px] ml-[75px]" />
+              <img
+                src="publico.webp"
+                className="w-[588px] ml-[75px] xs:w-[270px] xs:pt-[25px]"
+              />
             </div>
           </div>
         </>
@@ -36,26 +37,26 @@ const Tab = () => {
       title: "Ubicación",
       content: (
         <>
-          <div className="flex  w-auto">
+          <div className="flex  w-auto xs:flex-col">
             <div className="flex flex-col ">
-              <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
-                Selecciona estratégicamente <br /> tu ubicación:
+              <p className="font-ceraBold xs:text-[24px] xs:text-center text-third leading-[73px] text-[60px] mb-[10px] xs:leading-[30px] xs:pb-[16px]">
+                Selecciona estratégicamente tu ubicación:
               </p>
-              <p className="text-[24px] font-ceraLigth text-[#262525] leading-33">
+              <p className="text-[24px] xs:text-center font-ceraLigth text-[#262525] leading-33  xs:text-[24px]">
                 <span className="font-ceraBold">La elección del lugar </span>
-                adecuado es crucial en cualquier estrategia de
-                <br /> marketing. Debes escoger cuidadosamente los canales y
-                medios
-                <br /> donde podrás conectar con clientes potenciales y lograr
-                un mayor
-                <br /> reconocimiento de tu marca. Esta decisión estratégica te
-                permitirá
-                <br /> posicionarte de manera efectiva en la mente de tu público
-                objetivo.
+                adecuado es crucial en cualquier estrategia de marketing. Debes
+                escoger cuidadosamente los canales y medios donde podrás
+                conectar con clientes potenciales y lograr un mayor
+                reconocimiento de tu marca. Esta decisión estratégica te
+                permitirá posicionarte de manera efectiva en la mente de tu
+                público objetivo.
               </p>
             </div>
             <div className="flex">
-              <img src="publico.webp" className="w-[588px] ml-[75px]" />
+              <img
+                src="publico.webp"
+                className="w-[588px] ml-[75px] xs:w-[270px] xs:pt-[25px]"
+              />
             </div>
           </div>
         </>
@@ -65,25 +66,26 @@ const Tab = () => {
       title: "Mensaje",
       content: (
         <>
-          <div className="flex w-auto">
+          <div className="flex w-auto xs:flex-col">
             <div className="flex flex-col">
-              <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
-                Potencia tu mensaje <br /> con creatividad:
+              <p className="font-ceraBold xs:text-[24px] xs:leading-[30px] xs:text-center text-third leading-[73px] text-[60px] mb-[10px]">
+                Potencia tu mensaje con creatividad:
               </p>
-              <p className="text-[24px] font-ceraLigth text-[#262525] leading-33">
+              <p className="text-[24px] font-ceraLigth xs:text-center text-[#262525] leading-33 xs:text-[24px]">
                 <span className="font-ceraBold">La creatividad </span>es el
-                motor que impulsa el éxito de
-                <br /> cualquier campaña. Agrega videos e imágenes de alta
-                calidad
-                <br /> que no solo aporten valor, sino que también <br />
-                generen una impresión duradera. Estos elementos
-                <br /> visuales no solo aumentarán tu visibilidad,
-                <br /> sino que también reforzarán el posicionamiento de
-                <br /> tu marca en la mente de tus clientes potenciales.
+                motor que impulsa el éxito de cualquier campaña. Agrega videos e
+                imágenes de alta calidad que no solo aporten valor, sino que
+                también generen una impresión duradera. Estos elementos visuales
+                no solo aumentarán tu visibilidad, sino que también reforzarán
+                el posicionamiento de tu marca en la mente de tus clientes
+                potenciales.
               </p>
             </div>
             <div className="flex">
-              <img src="publico.webp" className="w-[588px] ml-[75px]" />
+              <img
+                src="publico.webp"
+                className="w-[588px] ml-[75px]xs:w-[270px] xs:pt-[25px]"
+              />
             </div>
           </div>
         </>

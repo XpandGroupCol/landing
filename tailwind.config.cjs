@@ -23,6 +23,9 @@ module.exports = {
         helvetica: "'Helvetica', serif",
         ceraLight: "'Cera Light', serif",
       },
+      fontSize: {
+        '24': '24px',
+      },
       lineHeight: {
         70: "70px",
         33: "33px",
