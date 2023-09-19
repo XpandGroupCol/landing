@@ -208,19 +208,19 @@ import Carrousel from "../components/carrousel";
     <!--aqui empiezo la ultima seccion -->
 
     <footer
-      class="bg-image-banner flex flex-col pt-[98px]  pl-[3%] pr-[3%]"
+      class="bg-image-banner flex flex-col pt-[98px]   pl-[3%] pr-[3%]"
     >
       <div class="flex justify-center">
         <!-- Cuadro uno -->
-        <div class="flex flex-col w-[38%] bg-slate-500">
-          <picture class="flex">
+        <div class="flex flex-col w-[38%]">
+          <picture class="flex pb-[28px]">
             <img
               src="logo-white.svg"
               alt="logo shareflow"
               class="w-[210px] h-[auto]"
             />
           </picture>
-          <div class="bg-black flex pb-[29px]">
+          <div class=" flex pb-[29px]">
             <p class="text-white text-[20px]">
               Con Shareflow, podrás consolidar tu presencia en los principales
               medios digitales del país, catapultando tu marca hacia un nivel
@@ -230,7 +230,7 @@ import Carrousel from "../components/carrousel";
           <EmailInput client:only="react" />
         </div>
         <!-- Cuadro dos -->
-        <div class="flex flex-col w-[56%] bg-slate-200 items-center">
+        <div class="flex flex-col w-[56%]  items-center">
           <picture class="flex justify-center">
             <img
               src="logo-white.svg"
@@ -245,38 +245,26 @@ import Carrousel from "../components/carrousel";
         <div class="flex opacity-[50%] border-[1px] w-[100%]"></div>
       </div>
       <!--container redes y politicas de privacidad -->
-      <div class="flex pt-[30px]  bg-black justify-center ">
-        <div class="flex w-[50%] ">
+      <div class="flex pt-[30px] pb-[30px]  justify-center ">
+        <div class="flex w-[50%] items-center ">
           <p class="text-[16px] text-white font-ceraBold leading-[20.11px]">
             © 2023 Shareflow. Todos los derechos reservados.
           </p>
         </div>
         <div
-          class="flex w-[50%] text-[16px] text-white font-ceraBold leading-[20.11px] gap-8 justify-end"
+          class="flex w-[50%] text-[16px] text-white font-ceraBold leading-[20.11px] gap-8 justify-end items-center"
         >
           <p>Políticas de Privacidad</p>
           <p>Nuestras redes</p>
 
-          <picture
-            class="flex bg-white w-[49px] justify-center h-[49px]
-   items-center rounded-full"
-          >
-            <img
-              src="instagram.webp "
-              alt="logo instagram"
-              class="w-[28px] h-[28px] justify-center"
-            />
-          </picture>
-          <picture
-            class="flex bg-white w-[49px] justify-center h-[49px]
-   items-center rounded-full"
-          >
-            <img
-              src="linkedin.webp "
-              alt="logo instagram"
-              class="w-[28px] h-[28px]"
-            />
-          </picture>
+          <picture class="flex bg-white w-[49px] h-[49px] items-center justify-center rounded-full">
+            <img src="instagram.webp" alt="logo instagram" class="w-[28px] h-[28px]">
+        </picture>
+        
+        <picture class="flex bg-white w-[49px] h-[49px] items-center justify-center rounded-full">
+            <img src="linkedin.webp" alt="logo linkedin" class="w-[28px] h-[28px]">
+        </picture>
+        
         </div>
         <!-- -->
       </div>
