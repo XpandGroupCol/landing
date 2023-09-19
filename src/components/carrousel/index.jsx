@@ -15,6 +15,7 @@ const properties = {
         height="19"
         viewBox="0 0 14 19"
         fill="none"
+        
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -34,6 +35,7 @@ const properties = {
         viewBox="0 0 16 19"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        
       >
         <path
           d="M2 2L13.4651 8.06327C14.1464 8.42359 14.1812 9.38676 13.5276 9.79526L2 17"
