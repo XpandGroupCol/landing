@@ -29,7 +29,8 @@ const Button = ({ children, onClick, type = "default" }) => {
     <button onClick={onClick} className={`${config.bg} text-[white] font-ceraLight border-none h-[46px] text-[24px] leading-[42px] w-full rounded-[30px] px-6 flex justify-center items-center`}>
       {words.map((word, index) => (
         <span key={index} className={config.text[index]}>
-          {word}{index !== words.length - 1 ? '  ' : ''}
+          {word}
+          {index !== words.length - 1 ? <span dangerouslySetInnerHTML={{ __html: '&nbsp;&nbsp;' }} /> : ''}
         </span>
       ))}
     </button>
