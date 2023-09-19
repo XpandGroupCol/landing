@@ -13,10 +13,9 @@ module.exports = {
         //morado
         fourth: "#5F4092",
       },
-      backgroundImage: {
-        "image-banner": "url('/fondo.banner.svg')",
-        "image-banner-footer": "url('/Maskgroup.webp')"
-      },
+      backgroundImage: theme => ({
+        'gradiente-custom': `linear-gradient(45deg, ${theme('colors.fourth')} 0%, ${theme('colors.third')} 100%)`,
+      }),
 
       fontFamily: {
         ceraBold: "'Cera Bold', serif",
