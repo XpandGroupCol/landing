@@ -30,7 +30,7 @@ const Button = ({ children, onClick, type = "default" }) => {
       {words.map((word, index) => (
         <span key={index} className={config.text[index]}>
           {word}
-          {index !== words.length - 1 ? <span dangerouslySetInnerHTML={{ __html: '&nbsp;&nbsp;' }} /> : ''}
+          {index !== words.length - 1 ? <span dangerouslySetInnerHTML={{ __html: '&nbsp;' }} /> : ''}
         </span>
       ))}
     </button>
