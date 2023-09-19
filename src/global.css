@@ -10,12 +10,6 @@
     }
 
     @font-face {
-        font-family: "Cera Normal" ;
-        src: url("/fonts/cera-pro-normal.otf") format("opentype");
-        font-weight: "300";
-    }
-
-    @font-face {
         font-family: "Helvetica" ;
         src: url("/fonts/helvetica-neue-normal.otf") format("opentype");
         font-weight: "500";
@@ -28,12 +22,7 @@
         
         
     }
-    @font-face {
-        font-family:"Cera Thin" ;
-        src: url("/fonts/cera-pro-thin.otf") format("opentype");
-        font-weight: "100";
-       
-    }
+  
    
 } 
 .slide-left{

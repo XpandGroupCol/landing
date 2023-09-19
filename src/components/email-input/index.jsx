@@ -1,7 +1,7 @@
 import { useState } from "react";
 import WelcomeForm from "../form";
 
-const EmailInput = () => {
+const EmailInput = ({type ="secondary"}) => {
   const [email, setEmail] = useState("");
   return (
     <div className="justify-center flex gap-3">
@@ -15,7 +15,7 @@ const EmailInput = () => {
       <div className="flex">
       <WelcomeForm
         text="Iniciar Prueba Gratuita"
-        type="secondary"
+        type={type}
         email={email}
        
       />

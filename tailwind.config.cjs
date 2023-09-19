@@ -19,10 +19,9 @@ module.exports = {
 
       fontFamily: {
         ceraBold: "'Cera Bold', serif",
-        ceraNormal: "'Cera Normal', serif",
+      
         helvetica: "'Helvetica', serif",
-        ceraThin: "'Cera Thin',serif",
-        ceraLight: "'Cera Light', serif'",
+        ceraLight: "'Cera Light', serif",
       },
       lineHeight: {
         70: "70px",
