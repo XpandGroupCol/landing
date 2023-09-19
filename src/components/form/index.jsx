@@ -129,10 +129,10 @@ const WelcomeForm = ({
               }}
             />
           </div>
-          <div className="flex justify-center items-center sm:justify-end px-6 gap-[86px]">
+          <div className="flex justify-center items-center sm:justify-end px-2 bg-green-200 ">
             <button
               disabled={loading}
-              className={`bg-fourth border-none text-[white] uppercase px-4 py-1 font-semibold rounded-md ${
+              className={`bg-fourth border-none text-[white]   uppercase flex  px-4 py-1 font-semibold rounded-md ${
                 loading ? "opacity-50" : ""
               }`}
             >
@@ -142,7 +142,7 @@ const WelcomeForm = ({
               type="button"
               disabled={loading}
               onClick={handleClose}
-              className={`border-2 border-fourth text-fourth uppercase px-2 py-1 font-semibold rounded-md ${
+              className={`border-2 border-fourth bg-red-500 text-fourth uppercase px-4 py-1 font-semibold rounded-md ${
                 loading ? "opacity-50" : ""
               }`}
             >
