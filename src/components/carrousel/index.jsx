@@ -58,14 +58,14 @@ const properties = {
 
 const Carrousel = ({ images, config = {}, left = false }) => {
   return (
-    <div className={`${left ? "slide-left" : ""} w-full bg-white  py-2 px-20`}>
+    <div className={`${left ? "slide-left" : ""} w-full bg-transparent  h-[100px]  px-20`}>
       <Slide {...{ ...properties, ...config }}>
         {images.map(({ src, name }) => (
           <div
-            className="each-slide-effect flex justify-center min-w-[140px]"
+            className="each-slide-effect flex justify-center min-w-[140px] h-[100px] items-center"
             key={name}
           >
-            <img src={src} alt={name} className="w-auto h-[36px] invert" />
+            <img src={src} alt={name} className="w-auto h-[130px] " />
           </div>
         ))}
       </Slide>

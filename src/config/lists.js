@@ -19,7 +19,7 @@ export const MEDIOS_IMAGES = [
 ]
 */
 
-export const MEDIOS_IMAGES = [
+export const MEDIA_IMAGES = [
     { name: 'adn', src: 'adn.svg' },
     { name: 'as', src: 'as.svg' },
     { name: 'claro', src: 'claro.svg' },
