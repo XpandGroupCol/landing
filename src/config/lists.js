@@ -26,6 +26,7 @@ export const MEDIA_IMAGES = [
   { name: "twitch", src: "twitch.svg" },
   { name: "valora.analitik", src: "valora.analitik.svg" },
   { name: "waze", src: "waze.svg" },
+
   { name: "win", src: "win.svg" },
   { name: "x", src: "x.svg" },
 ];
