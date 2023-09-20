@@ -13,6 +13,7 @@ module.exports = {
         //morado
         fourth: "#5F4092",
       },
+     
       backgroundImage: theme => ({
         'gradiente-custom': `linear-gradient(45deg, ${theme('colors.fourth')} 0%, ${theme('colors.third')} 100%)`,
       }),
