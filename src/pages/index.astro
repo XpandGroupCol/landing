@@ -218,9 +218,9 @@ import Carrousel from "../components/carrousel";
     <footer
       class="bg-gradiente-custom flex flex-col pt-[98px]   pl-[3%] pr-[3%]"
     >
-      <div class="flex justify-center">
+      <div class="flex lg:flex-row xxs:flex-col xs:flex-col md:flex-col justify-center">
         <!-- Cuadro uno -->
-        <div class="flex flex-col w-[38%]">
+        <div class="flex flex-col w-[38%] lg:w-auto xxs:w-auto xs:w-auto md:w-auto">
           <picture class="flex pb-[28px]">
             <img
               src="logo-white.svg"
@@ -235,7 +235,9 @@ import Carrousel from "../components/carrousel";
               superior de reconocimiento y éxito.
             </p>
           </div>
+          <div class="flex">
           <EmailInput client:only="react" type="third" />
+        </div>
         </div>
         <!-- Cuadro dos -->
         <div class="flex flex-col w-[56%]  items-center">
@@ -243,7 +245,7 @@ import Carrousel from "../components/carrousel";
             <img
               src="logo-white.svg"
               alt="logo shareflow"
-              class="w-[960px] h-[auto] opacity-20"
+              class="w-[960px] h-[auto] opacity-20 lg:block xxs:hidden "
             />
           </picture>
         </div>
