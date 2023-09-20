@@ -8,7 +8,7 @@ const Tab = () => {
       title: "Público",
       content: (
         <>
-          <div className="flex md:flex-col max-w-xs:flex-col lg:flex-row  justify-center items-center">
+          <div className="flex flex-col-xs md:flex-col xs:flex-col lg:flex-row  justify-center items-center">
             <div className="flex flex-col lg:pb-0 xs:pb-[20px] flex-1">
               <p className="font-ceraBold text-third lg:leading-[73px] xs:leading-[30px] lg:text-left xs:text-center lg:text-[60px] xs:text-[24px] mb-[10px] ">
                 Determina con precisión

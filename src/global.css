@@ -31,3 +31,10 @@
 .slide-left .each-slide-effect{
     transform: rotate(-180deg) !important;
 }
+/*
+@media (max-width: 450px) {
+    .flex-col-xs {
+      flex-direction: column !important;
+    }
+  }
+  */
