@@ -8,25 +8,25 @@ const Tab = () => {
       title: "Público",
       content: (
         <>
-          <div className="flex md:flex-col xs:flex-col lg:flex-row w-auto">
-            <div className="flex flex-col">
-              <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
+          <div className="flex md:flex-col xs:flex-col lg:flex-row  justify-center items-center">
+            <div className="flex flex-col lg:pb-0 xs:pb-[20px] flex-1">
+              <p className="font-ceraBold text-third lg:leading-[73px] xs:leading-[30px] lg:text-left xs:text-center lg:text-[60px] xs:text-[24px] mb-[10px] ">
                 Determina con precisión
-                <br /> a quién deseas llegar:
+                a quién deseas llegar:
               </p>
-              <p className="text-[24px] font-ceraLigth text-[#262525] leading-33">
-                <span className="font-ceraBold">En primer lugar, </span>
+              <p className="text-[24px] font-ceraLigth text-[#262525] leading-33 lg:pt-0 xs:pt-[20px] lg:pb-0 xs:pb-[16px] ">
+                <span className="font-ceraBold ">En primer lugar, </span>
                 Shareflow permite definir con claridad
-                <br /> a tu audiencia objetivo. Establece con minuciosidad la
+                a tu audiencia objetivo. Establece con minuciosidad la
                 segmentación
-                <br /> de tu campaña, y nosotros nos encargaremos de adaptar
-                cada <br />
+                de tu campaña, y nosotros nos encargaremos de adaptar
+                cada 
                 elemento para que se ajuste perfectamente a los objetivos de
-                <br /> tu marca.
+                 tu marca.
               </p>
             </div>
-            <div className="flex">
-              <img src="Publico.webp" className="w-[588px] ml-[75px]" />
+            <div className="flex flex-1 ">
+              <img src="Publico.webp" className="w-[588px] ml-[75px] " />
             </div>
           </div>
         </>
@@ -44,18 +44,18 @@ const Tab = () => {
               <p className="text-[24px] font-ceraLigth text-[#262525] leading-33">
                 <span className="font-ceraBold">La elección del lugar </span>
                 adecuado es crucial en cualquier estrategia de
-                <br /> marketing. Debes escoger cuidadosamente los canales y
+                marketing. Debes escoger cuidadosamente los canales y
                 medios
-                <br /> donde podrás conectar con clientes potenciales y lograr
+                 donde podrás conectar con clientes potenciales y lograr
                 un mayor
-                <br /> reconocimiento de tu marca. Esta decisión estratégica te
+                 reconocimiento de tu marca. Esta decisión estratégica te
                 permitirá
-                <br /> posicionarte de manera efectiva en la mente de tu público
+                 posicionarte de manera efectiva en la mente de tu público
                 objetivo.
               </p>
             </div>
-            <div className="flex">
-              <img src="Publico.webp" className="w-[588px] ml-[75px]" />
+            <div className="flex ">
+              <img src="Publico.webp" className="w-[588px] ml-[75px] " />
             </div>
           </div>
         </>
@@ -73,13 +73,13 @@ const Tab = () => {
               <p className="text-[24px] font-ceraLigth text-[#262525] leading-33">
                 <span className="font-ceraBold">La creatividad </span>es el
                 motor que impulsa el éxito de
-                <br /> cualquier campaña. Agrega videos e imágenes de alta
+                 cualquier campaña. Agrega videos e imágenes de alta
                 calidad
-                <br /> que no solo aporten valor, sino que también <br />
+                que no solo aporten valor, sino que también 
                 generen una impresión duradera. Estos elementos
-                <br /> visuales no solo aumentarán tu visibilidad,
-                <br /> sino que también reforzarán el posicionamiento de
-                <br /> tu marca en la mente de tus clientes potenciales.
+                visuales no solo aumentarán tu visibilidad,
+                 sino que también reforzarán el posicionamiento de
+                 tu marca en la mente de tus clientes potenciales.
               </p>
             </div>
             <div className="flex">
