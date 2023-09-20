@@ -26,7 +26,7 @@ const Tab = () => {
               </p>
             </div>
             <div className="flex">
-              <img src="publico.webp" className="w-[588px] ml-[75px]" />
+              <img src="Publico.webp" className="w-[588px] ml-[75px]" />
             </div>
           </div>
         </>
@@ -55,7 +55,7 @@ const Tab = () => {
               </p>
             </div>
             <div className="flex">
-              <img src="publico.webp" className="w-[588px] ml-[75px]" />
+              <img src="Publico.webp" className="w-[588px] ml-[75px]" />
             </div>
           </div>
         </>
@@ -83,7 +83,7 @@ const Tab = () => {
               </p>
             </div>
             <div className="flex">
-              <img src="publico.webp" className="w-[588px] ml-[75px]" />
+              <img src="Publico.webp" className="w-[588px] ml-[75px]" />
             </div>
           </div>
         </>

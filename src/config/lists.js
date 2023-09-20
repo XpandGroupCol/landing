@@ -17,18 +17,18 @@ export const MEDIA_IMAGES = [
   { name: "pinterest", src: "pinterest.svg" },
   { name: "publimetro", src: "publimetro.svg" },
   { name: "portafolio", src: "portafolio.svg" },
-  { name: "pulzo", src: "pulzo.svg" },
-  { name: "semana", src: "semana.svg" },
-  { name: "shock", src: "shock.svg" },
-  { name: "snapchat", src: "snapchat.svg" },
-  { name: "spotify", src: "spotify.svg" },
+  { name: "pulzo", src: "Pulzo.svg" },
+  { name: "semana", src: "Semana.svg" },
+  { name: "shock", src: "Shock.svg" },
+  { name: "snapchat", src: "Snapchat.svg" },
+  { name: "spotify", src: "Spotify.svg" },
   { name: "tiktok", src: "tiktok.svg" },
-  { name: "twitch", src: "twitch.svg" },
+  { name: "twitch", src: "Twitch.svg" },
   { name: "valora.analitik", src: "valora.analitik.svg" },
-  { name: "waze", src: "waze.svg" },
+  { name: "waze", src: "Waze.svg" },
 
-  { name: "win", src: "win.svg" },
-  { name: "x", src: "x.svg" },
+  { name: "win", src: "Win.svg" },
+  { name: "x", src: "X.svg" },
 ];
 
 export const customConfig = {
