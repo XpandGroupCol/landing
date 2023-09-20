@@ -4,7 +4,7 @@ import WelcomeForm from "../form";
 const EmailInput = ({type ="secondary"}) => {
   const [email, setEmail] = useState("");
   return (
-    <div className="justify-center flex gap-3">
+    <div className="justify-center flex gap-3 lg:flex-row xxs:flex-col xs:flex-col md:flex-col  ">
       <input
         name="email"
         placeholder="Ingresa tu correo electronico"
