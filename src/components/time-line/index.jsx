@@ -8,7 +8,7 @@ const Tab = () => {
       title: "Público",
       content: (
         <>
-          <div className="flex w-auto">
+          <div className="flex md:flex-col xs:flex-col lg:flex-row w-auto">
             <div className="flex flex-col">
               <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
                 Determina con precisión
@@ -66,7 +66,7 @@ const Tab = () => {
       content: (
         <>
           <div className="flex w-auto">
-            <div className="flex flex-col">
+            <div className="flex flex-col md:mr-[75px]">
               <p className="font-ceraBold text-third leading-[73px] text-[60px] mb-[10px]">
                 Potencia tu mensaje <br /> con creatividad:
               </p>
