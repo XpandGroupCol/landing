@@ -9,7 +9,7 @@ const Tab = () => {
       content: (
         <>
           <div className="flex flex-col-xs md:flex-col xs:flex-col lg:flex-row  justify-center items-center">
-            <div className="flex flex-col lg:pb-0 xs:pb-[20px] w-[40%]">
+            <div className="flex flex-col lg:pb-0 xs:pb-[20px] lg:w-[40%] xs:w-auto xxs:w-auto md:w-auto w-[40%]">
               <p className="font-ceraBold text-third lg:leading-[73px] xs:leading-[30px] lg:text-left xs:text-center lg:text-[60px] xs:text-[24px] xxs:text-[24px] mb-[10px] ">
                 Determina con precisión
                 a quién deseas llegar:
@@ -37,7 +37,7 @@ const Tab = () => {
       content: (
         <>
           <div className="flex flex-col-xs md:flex-col xs:flex-col lg:flex-row  justify-center items-center">
-            <div className="flex flex-col lg:pb-0 xs:pb-[20px]  w-[40%] ">
+            <div className="flex flex-col lg:pb-0 xs:pb-[20px]   lg:w-[40%] xs:w-auto xxs:w-auto md:w-auto w-[40%] ">
               <p className="font-ceraBold text-third lg:leading-[73px] xxs:text-[24px] xs:leading-[30px] lg:text-left xs:text-center lg:text-[60px] xs:text-[24px] mb-[10px]">
                 Selecciona estratégicamente tu ubicación:
               </p>
@@ -66,7 +66,7 @@ const Tab = () => {
       content: (
         <>
           <div className="flex flex-col-xs md:flex-col xs:flex-col lg:flex-row  justify-center items-center">
-            <div className="flex flex-col lg:pb-0 xs:pb-[20px] w-[40%]">
+            <div className="flex flex-col lg:pb-0 xs:pb-[20px]  lg:w-[40%] xs:w-auto xxs:w-auto md:w-auto w-[40%]">
               <p className="font-ceraBold text-third lg:leading-[73px] xxs:text-[24px] xs:leading-[30px] lg:text-left xs:text-center lg:text-[60px] xs:text-[24px] mb-[10px]">
                 Potencia tu mensaje con creatividad:
               </p>
