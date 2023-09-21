@@ -46,7 +46,7 @@ const properties = {
       </svg>
     </button>
   ),
-  slidesToShow: 4,
+  slidesToShow: 2,
   responsive: [
     {
       breakpoint: 800,
