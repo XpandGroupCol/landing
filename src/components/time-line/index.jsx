@@ -26,7 +26,7 @@ const Tab = () => {
               </p>
             </div>
             <div className="lg:w-[50%]">
-              <img src="publico.webp" />
+              <img src="public.webp" />
             </div>
           </div>
         </>
