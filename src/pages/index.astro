@@ -99,7 +99,7 @@ import Carrousel from "../components/carrousel";
             />
           </picture>
           <!--este menu hamburguesa y logo se muestran -->
-          <div class="hidden xs:flex xxs:flex md:flex flex-col">
+          <div class="hidden xs:flex xxs:flex md:flex flex-col lg:hidden">
            <div class="flex gap-[150px]">
             <div class="justify-start">
             <img
@@ -120,9 +120,16 @@ import Carrousel from "../components/carrousel";
                   >digitales lista en cuestión de minutos!</span
                 >
               </h3>
-              <p class="text-[14px] font-ceraLight pb-[15px]">Con Shareflow, podrás consolidar tu presencia en los principales medios digitales del país, catapultando tu marca hacia un nivel superior de reconocimiento y éxito.</p>
-              <img src="phone.banner.webp" class="" alt="imagen de celular" />
+              <p class="text-[14px] font-ceraLight pb-[51px]">Con Shareflow, podrás consolidar tu presencia en los principales medios digitales del país, catapultando tu marca hacia un nivel superior de reconocimiento y éxito.</p>
+              <EmailInput client:only="react"/>
+              <img src="phone.banner.webp" class="pt-[42px]" alt="imagen de celular" />
             </div>
+            <p class="text-center">Shareflow te ofrece la oportunidad de destacar en los medios y plataformas más influyentes del país.</p>
+            <div class="max-w-full m-auto mb-[35px] rounded-2xl overflow-hidden ">
+              <Carrousel client:only="react" images={MEDIA_IMAGES} />
+              
+            </div>
+           
           
           
           </div>
@@ -178,7 +185,7 @@ import Carrousel from "../components/carrousel";
         </picture>
       </div>
       <!-- texto abajo -->
-          <div class="flex w-[600px] mt-[2px] mb-[36px] xs:hidden xxs:hidden lg:flex md:hidden">
+          <div class="flex w-[600px] mt-[2px] mb-[36px] xs:hidden xxs:hidden lg:hidden md:hidden">
             <div class=" flex ml-[333px] mt-[117px] mb-[80px]">
         <p class="font-ceraLight text-primary text-[24px]">
           Shareflow te ofrece la oportunidad de destacar en los
@@ -188,7 +195,7 @@ import Carrousel from "../components/carrousel";
         </p>
       </div>
 
-      <div class="max-w-full m-auto mb-[35px] rounded-2xl overflow-hidden">
+      <div class="max-w-full m-auto mb-[35px] rounded-2xl overflow-hidden ">
         <Carrousel client:only="react" images={MEDIA_IMAGES} />
         <!-- 
         <Carrousel client:only="react" images={MEDIOS_IMAGES2} left /> 
