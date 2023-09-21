@@ -89,18 +89,44 @@ import Carrousel from "../components/carrousel";
         style="display:none;visibility:hidden"></iframe></noscript
     >
     <header class="bg-gradiente-custom pb-10">
-      <div class="flex text-secondary w-full py-[54px] px-[92px]">
-        <div class="flex-1 flex items-center justify-between">
-          <picture class="">
+      <div class="flex text-secondary w-full py-[54px]  lg:py-[54px] lg:px-[92px] xs:py-[28px] xs:px-[20px] ">
+        <div class="flex-1 flex items-center justify-between ">
+          <picture class=" flex  md:hidden xs:hidden xx:hidden">
             <img
               src="logo-white.svg"
               alt="logo shareflow"
               class="w-[217px] h-[auto]"
             />
           </picture>
-          <div>
+          <!--este menu hamburguesa y logo se muestran -->
+          <div class="hidden xs:flex xxs:flex md:flex flex-col">
+           <div class="flex gap-[150px]">
+            <div class="justify-start">
+            <img
+              src="logo-white.svg"
+              alt="logo shareflow"
+              class="w-[217px] h-[auto]"
+            /></div>
+            <div class="flex justify-end">
             <HamburguerMenu client:only="react"/>
           </div>
+        </div> 
+            <!--texto -->
+            <div class="flex flex-col  font-ceraLight mt-[40px] mb-[10px]">
+              <h3 class="text-[28px] font-ceraLight
+                 text-primary leading-[30.17px] text-center pb-[20px]">
+                ¡Tu campaña en medios
+                <span class="font-ceraBold"
+                  >digitales lista en cuestión de minutos!</span
+                >
+              </h3>
+              <p class="text-[14px] font-ceraLight pb-[15px]">Con Shareflow, podrás consolidar tu presencia en los principales medios digitales del país, catapultando tu marca hacia un nivel superior de reconocimiento y éxito.</p>
+              <img src="phone.banner.webp" class="" alt="imagen de celular" />
+            </div>
+          
+          
+          </div>
+         
           <div class="hidden items-center gap-16 lg:flex">
             <a href="#create-sherflow">
               <h3 class="font-ceraLight leading-[22.63px] text-[18px]">
@@ -127,7 +153,7 @@ import Carrousel from "../components/carrousel";
         </div>
       </div>
       <!--empiezo texto e imagen -->
-      <div class="flex m-auto max-w-[1360px] gap-12">
+      <div class="flex  lg:flex xs:hidden xxs:hidden md:hidden m-auto max-w-[1360px] gap-12">
         <div class="flex w-[50%] flex-col pt-[200px] font-ceraLight">
           <h3 class="text-[54px] font-ceraLight
 						 text-primary leading-70">
@@ -136,7 +162,7 @@ import Carrousel from "../components/carrousel";
               >digitales lista en cuestión de minutos!</span
             >
           </h3>
-          <div class="flex w-[600px] mt-[2px] mb-[36px]">
+          <div class="flex w-[600px] mt-[2px] mb-[36px] xs:hidden xxs:hidden lg:flex md:hidden">
             <p class="text-primary text-[24px]
 							font-ceraLight leading-33 w-[]">
               Con Shareflow, podrás consolidar tu presencia en los principales
@@ -147,12 +173,13 @@ import Carrousel from "../components/carrousel";
           <EmailInput client:only="react" />
         </div>
         <!--empiezo  imagen -->
-        <picture class="w-[50%] pt-[50px]">
+        <picture class=" xs:hidden flex lg:flex xxs:hidden md:hidden w-[50%] pt-[50px]">
           <img src="phone.banner.webp" class="" alt="imagen de celular" />
         </picture>
       </div>
       <!-- texto abajo -->
-      <div class="flex ml-[333px] mt-[117px] mb-[80px]">
+          <div class="flex w-[600px] mt-[2px] mb-[36px] xs:hidden xxs:hidden lg:flex md:hidden">
+            <div class=" flex ml-[333px] mt-[117px] mb-[80px]">
         <p class="font-ceraLight text-primary text-[24px]">
           Shareflow te ofrece la oportunidad de destacar en los
           <span class="font-ceraBold">
