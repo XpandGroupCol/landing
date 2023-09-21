@@ -80,7 +80,7 @@ const WelcomeForm = ({
   return (
     <>
       <ToastContainer theme="colored" />
-      <div className={`w-full xs:max-w-[320px]  ${className}`}>
+      <div className={`w-full md:w-fit  ${className}`}>
         <Button type={type} onClick={handleOpen}>
           {text}
         </Button>

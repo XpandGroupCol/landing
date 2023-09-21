@@ -5,11 +5,10 @@ import Text from "../components-astro/Text.astro";
 import WelcomeForm from "../components/form";
 import Tab from "../components/time-line";
 import EmailInput from "../components/email-input";
-import HamburguerMenu from "../components/hamburguer-menu"
+import HamburguerMenu from "../components/hamburguer-menu";
 //import RecomendationCard from "../components/recomendation-card.astro";
 //import AllCard from "../components/all-card.astro";
 //import CountDown from "../components/countdown";
-
 
 import {
   // ALL_IN_ONE,
@@ -90,289 +89,215 @@ import Carrousel from "../components/carrousel";
         width="0"
         style="display:none;visibility:hidden"></iframe></noscript
     >
-    <header class="bg-gradiente-custom pb-10">
-      <div class="flex text-secondary w-full py-[54px]  lg:py-[54px] lg:px-[92px] xs:py-[28px] xs:px-[20px] ">
-        <div class="flex-1 flex items-center justify-between ">
-          <picture class=" flex  md:hidden xs:hidden xx:hidden">
-            <img
-              src="logo-white.svg"
-              alt="logo shareflow"
-              class="w-[217px] h-[auto]"
+    <header
+      class="bg-gradiente-custom px-[20px] py-[20px] md:pb-[80px] md:pt-[40px]"
+    >
+      <nav class="w-full mb-[80px] flex items-center justify-between gap-14">
+        <picture>
+          <img
+            src="logo-white.svg"
+            alt="logo shareflow"
+            class="w-[150px] h-[auto]"
+          />
+        </picture>
+        <div class="items-center flex-1 justify-between hidden lg:flex">
+          <div class="flex gap-6 items-center">
+            <a href="#flow" class="text-[#ffffff99]">
+              Paso a paso <strong class="text-white">Campaña</strong>
+            </a>
+            <a href="#benefits" class="text-[#ffffff99]">
+              Beneficios <strong class="text-white">Shareflow</strong>
+            </a>
+          </div>
+          <div class="flex gap-3 items-center">
+            <a class="text-[#ffffff99]">
+              Iniciar <strong class="text-white">Sesion</strong>
+            </a>
+            <WelcomeForm
+            text="Prueba  Gratis"
+            type="third"
+            client:only="react"
             />
-          </picture>
-          <!--este menu hamburguesa y logo se muestran -->
-          <div class="hidden xs:flex xxs:flex md:flex flex-col lg:hidden">
-           <div class="flex gap-[150px]">
-            <div class="justify-start">
-            <img
-              src="logo-white.svg"
-              alt="logo shareflow"
-              class="w-[217px] h-[auto]"
-            /></div>
-            <div class="flex justify-end">
-           
-          </div>
-        </div> 
-            <!--texto -->
-            <div class="flex flex-col  font-ceraLight mt-[40px] mb-[10px]">
-              <h3 class="text-[28px] font-ceraLight
-                 text-primary leading-[30.17px] text-center pb-[20px]">
-                ¡Tu campaña en medios
-                <span class="font-ceraBold"
-                  >digitales lista en cuestión de minutos!</span
-                >
-              </h3>
-              <p class="text-[14px] font-ceraLight pb-[51px]">Con Shareflow, podrás consolidar tu presencia en los principales medios digitales del país, catapultando tu marca hacia un nivel superior de reconocimiento y éxito.</p>
-              <EmailInput client:only="react"/>
-              <img src="phone.banner.webp" class="pt-[42px]" alt="imagen de celular" />
-            </div>
-            <p class="text-center">Shareflow te ofrece la oportunidad de destacar en los medios y plataformas más influyentes del país.</p>
-            
-           
-          
-          
-          </div>
-         
-          <div class="hidden items-center gap-16 lg:flex">
-            <a href="#create-sherflow">
-              <h3 class="font-ceraLight leading-[22.63px] text-[18px]">
-                Paso a paso <span class="font-ceraBold">Campaña</span>
-              </h3>
-            </a>
-            <a href="#benefits">
-              <h3 class="leading-[22.63px] font-ceraLight text-[18px]">
-                Beneficios <span class="font-ceraBold">Shareflow</span>
-              </h3>
-            </a>
           </div>
         </div>
-
-        <div class="flex-1 hidden justify-end items-center gap-4 lg:flex">
-          <h3 class="font-ceraLight text-[24px] flex-shrink-0 pr-2">
-            Iniciar <span class="font-ceraBold">Sesion</span>
-          </h3>
+      </nav>
+      <section class="max-w-7xl m-auto lg:flex lg:gap-8 lg:items-center mt-10">
+        <article class="flex flex-col items-center mb-[40px] lg:w-[50%]">
+          <h2
+            class="text-[40px] md:text-[44px] font-ceraLight lg:text-left
+          text-primary text-center text-[#ffffff99] mb-5 leading-[52px]"
+          >
+            ¡Tu campaña en medios <span class="font-ceraBold text-white"
+              >digitales lista en cuestión de minutos!</span
+            >
+          </h2>
+          <p
+            class="text-[20px] font-ceraLight text-[#ffffff99] text-center mb-8 lg:text-left"
+          >
+            Con Shareflow, podrás consolidar tu presencia en los principales
+            medios digitales del país, catapultando tu marca hacia un nivel
+            superior de reconocimiento y éxito.
+          </p>
+          <div class="w-full sm:flex md:justify-center">
+            <EmailInput client:only="react" />
+          </div>
+        </article>
+        <article class="lg:w-[50%] md:max-w-[700px] md:m-auto">
+          <picture class="">
+            <img src="phone.banner.webp" class="" alt="imagen de celular" />
+          </picture>
+        </article>
+      </section>
+      <p
+        class="font-ceraLight text-primary text-[20px] text-center mb-10 text-[#ffffff99]"
+      >
+        Shareflow te ofrece la oportunidad de destacar en los
+        <span class="font-ceraBold text-white">
+          medios y plataformas más influyentes del país</span
+        >
+      </p>
+      <div class="max-w-8xl m-auto">
+        <Carrousel client:only="react" images={MEDIA_IMAGES} />
+      </div>
+    </header>
+    <section class="px-[20px] py-[30px] md:py-[80px]" id="flow">
+      <div class="max-w-7xl m-auto">
+        <h3
+          class="font-ceraLight leading-33 text-third text-[30px] lg:text-[50px] text-center mb-12"
+        >
+          ¿Cómo crear
+          <span class="font-ceraBold text-black">tu campaña?</span>
+        </h3>
+        <Tab client:only="react" />
+        <div class="mt-5 m-auto flex justify-center">
           <WelcomeForm
-            text="Prueba Gratis"
-            type="primary"
+            text="¡Inicia tu Campaña!"
+            type="secondary"
             client:only="react"
           />
         </div>
       </div>
-      <!--empiezo texto e imagen -->
-      <div class="flex  lg:flex xs:hidden xxs:hidden md:hidden m-auto max-w-[1360px] gap-12">
-        <div class="flex w-[50%] flex-col pt-[200px] font-ceraLight">
-          <h3 class="text-[54px] font-ceraLight
-						 text-primary leading-70">
-            ¡Tu campaña en medios
-            <span class="font-ceraBold"
-              >digitales lista en cuestión de minutos!</span
-            >
-          </h3>
-          <div class="flex w-[600px] mt-[2px] mb-[36px] xs:hidden xxs:hidden lg:flex md:hidden">
-            <p class="text-primary text-[24px]
-							font-ceraLight leading-33 w-[]">
-              Con Shareflow, podrás consolidar tu presencia en los principales
-              medios digitales del país, catapultando tu marca hacia un nivel
-              superior de reconocimiento y éxito.
-            </p>
-          </div>
-          <EmailInput client:only="react" />
-        </div>
-        <!--empiezo  imagen -->
-        <picture class=" xs:hidden flex lg:flex xxs:hidden md:hidden w-[50%] pt-[50px]">
-          <img src="phone.banner.webp" class="" alt="imagen de celular" />
-        </picture>
-      </div>
-      <!-- texto abajo -->
-          <div class="flex w-[600px] mt-[2px] mb-[36px] xs:hidden xxs:hidden lg:hidden md:hidden"> 
-            <div class=" flex ml-[333px] mt-[117px] mb-[80px]">
-        <p class="font-ceraLight text-primary text-[24px]">
-          Shareflow te ofrece la oportunidad de destacar en los
-          <span class="font-ceraBold">
-            medios y plataformas más influyentes del país</span
-          >
-        </p>
-      </div>
-      </div>
-
-      <div class="max-w-full m-auto mb-[35px] rounded-2xl overflow-hidden ">
-        <Carrousel client:only="react" images={MEDIA_IMAGES} />
-        <!-- 
-        <Carrousel client:only="react" images={MEDIOS_IMAGES2} left /> 
-        -->
-      </div>
-    </header>
-    <!--aqui empiezo la segunda seccion -->
-    <section
-      id="create-sherflow"
-      class="flex-col lg:flex-col bg-primary flex justify-center items-center pb-[87px]"
-    >
-      <div
-        class="flex text-center lg:mt-[85px] xs:mt-[22px] xxs:mt-[22px] xs:mb-[22px] xxs:mb-[22px] lg:mb-[77px] lg:text-[60px] xs:text-[32px] xxs:text-[32px]"
-      >
-        <h3 class="font-ceraLight leading-33 text-third">
-          ¿Cómo crear
-          <span class="font-ceraBold text-black">tu campaña?</span>
-        </h3>
-      </div>
-      <div class="flex justify-center items-center">
-        <Tab client:only="react" />
-      </div>
-      <div class="flex">
-        <WelcomeForm
-          text="¡Inicia tu Campaña!"
-          type="secondary"
-          client:only="react"
-        />
-      </div>
     </section>
-    <!--aqui empiezo la tercera seccion -->
-    <section
-      id="benefits"
-      class="flex flex-col lg:flex-col bg-[#5F4092] items-center pl-[60px] pr-[60px] xs:pl-[30px] xs:pr-[30px] pb-[130px] xxs:pl-[20px] xxs:pr-[20px]"
-    >
-      <div
-        class="flex flex-col-xs lg:flex-row xs:flex-col md:flex-col items-center pt-[122px] gap-[30px] pb-[80px]"
-      >
+    <section id="benefits" class="bg-[#5F4092] px-[20px] py-[50px]">
+      <div class="flex flex-col gap-4 max-w-7xl m-auto">
         <Text />
+        <div class="m-auto mt-[30px]">
+          <WelcomeForm
+            text="Iniciar Prueba Gratuita"
+            type="third"
+            client:only="react"
+          />
+        </div>
       </div>
-      <WelcomeForm
-        text="Iniciar Prueba Gratuita"
-        type="third"
-        client:only="react"
-      />
     </section>
-    <!--aqui empiezo la cuarta seccion -->
-    <section
-      class="flex flex-col justify-center items-center bg-[white] xs:pl-0 xs:pr-0 pb-[120px] lg:pb-[120px] lg:pl-[2%] pl-[2%] lg:pr-[2%]"
+    <section>
+      <div class="max-w-7xl m-auto mb-[50px]">
+        <Numbers />
+        <div class="hidden md:flex md:justify-center w-full md:mt-[50px]">
+          <WelcomeForm
+            type="fourth"
+            text="¡Inicia tu Campaña!"
+            client:only="react"
+            className="m-auto"
+          />
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-gradiente-custom flex flex-col px-[20px] py-[30px] md:pt-[80px] pb-[30px] text-white"
     >
-      <Numbers />
-      <div class="flex justify-center pt-[80px]">
-        <WelcomeForm
-          type="fourth"
-          text="¡Inicia tu Campaña!"
-          client:only="react"
-        />
-      </div>
-    </section>
-    <!--aqui empiezo la ultima seccion -->
+      <!-- Cuadro uno -->
 
-    <footer class="bg-gradiente-custom flex flex-col pt-[98px] pl-[3%] pr-[3%]">
-      <div
-        class="flex lg:flex-row xxs:flex-col xs:flex-col md:flex-col justify-center"
-      >
-        <!-- Cuadro uno -->
-        <div
-          class="flex flex-col justify-center items-center w-[38%] lg:w-[38%] xxs:w-auto xs:w-auto md:w-auto"
-        >
-          <picture class="flex pb-[28px]">
-            <img
-              src="logo-white.svg"
-              alt="logo shareflow"
-              class="w-[210px] h-[auto]"
-            />
-          </picture>
-          <div class="flex pb-[29px]">
-            <p class="text-white text-[20px]">
+      <div class="flex flex-col">
+        <div class="flex">
+          <div class="flex-1 w-full md:max-w-[600px]">
+            <picture class="w-[150px] mb-6">
+              <img src="logo-white.svg" alt="logo shareflow" />
+            </picture>
+            <p class="text-white text-[#ffffff99] mt-6 md:text-[20px]">
               Con Shareflow, podrás consolidar tu presencia en los principales
               medios digitales del país, catapultando tu marca hacia un nivel
               superior de reconocimiento y éxito.
             </p>
+            <div class="my-8">
+              <EmailInput client:only="react" type="third" />
+            </div>
           </div>
-          <div class="flex">
-            <EmailInput client:only="react" type="third" />
-          </div>
-        </div>
-        <!-- Cuadro dos -->
-        <div class="flex flex-col lg:w-[w-[56%] w-[56%] items-center">
-          <picture class="flex justify-center pl-[2%]">
-            <img
-              src="logo-white.svg"
-              alt="logo shareflow"
-              class="w-[960px] h-[auto] opacity-20 lg:block xxs:hidden"
-            />
+          <picture  class="mb-4 flex-1 justify-center items-center hidden lg:flex">
+            <img src="logo-white.svg" alt="logo shareflow " class="min-w-[800px] opacity-20" />
           </picture>
         </div>
-      </div>
-      <!-- parte final la linea-->
-       <!-- parte final la linea-->
-       <div class="flex flex-col pt-[80px] items-center w-[90%">
-        <div class="flex opacity-[50%] border-[1px] w-[100%]"></div>
-      </div>
-      <!--container redes y politicas de privacidad -->
-      <div class="flex lg:flex pt-[30px] pb-[30px]  justify-center xs:hidden xx:hidden md:hidden ">
-        <div class="flex w-[50%] items-center ">
-          <p class="text-[16px] text-white font-ceraBold leading-[20.11px]">
+
+        <div class="text-[14px] justify-between border-t mt-8 pt-4 hidden lg:flex">
+          <p class="text-white font-ceraBold">
             © 2023 Shareflow. Todos los derechos reservados.
           </p>
+          <div class="flex items-center gap-5">
+            <div class="flex items-center">
+              <p class="text-[14px] font-bold  border-r pr-5">
+                Políticas de Privacidad
+              </p>
+              <p class="font-bold pl-5">Nuestras redes</p>
+            </div>
+            <picture
+            class="bg-white w-[32px] h-[32px] rounded-full flex justify-center items-center"
+          >
+            <img
+              src="linkedin.webp"
+              alt="logo instagram"
+              class="w-[20px] h-[24px]"
+            />
+          </picture>
+          <picture
+              class="bg-white w-[32px] h-[32px] rounded-full flex justify-center items-center"
+            >
+              <img
+                src="instagram.webp"
+                alt="logo linkedin"
+                class="w-[20px] h-[24px]"
+              />
+            </picture>
+          </div>
         </div>
-        <div
-          class="flex w-[50%] text-[16px] text-white font-ceraBold leading-[20.11px] gap-8 justify-end items-center"
-        >
-          <p>Políticas de Privacidad</p>
-          <p>Nuestras redes</p>
 
-          <picture class="flex bg-white w-[49px] h-[49px] items-center justify-center rounded-full">
-            <img src="instagram.webp" alt="logo instagram" class="w-[28px] h-[28px]">
-        </picture>
-        
-        <picture class="flex bg-white w-[49px] h-[49px] items-center justify-center rounded-full">
-            <img src="linkedin.webp" alt="logo linkedin" class="w-[28px] h-[28px]">
-        </picture>
-        
+       <div class="lg:hidden">
+        <p class="font-bold mb-4">Nuestras redes</p>
+
+        <div class="flex gap-2 items-center mb-3">
+          <picture
+            class="bg-white w-[32px] h-[32px] rounded-full flex justify-center items-center"
+          >
+            <img
+              src="linkedin.webp"
+              alt="logo instagram"
+              class="w-[20px] h-[24px]"
+            />
+          </picture>
+          <p class="text-[#ffffff99]">Linkedin</p>
         </div>
-          <!-- -->
+        <div class="flex gap-2 items-center mb-4">
+          <picture
+            class="bg-white w-[32px] h-[32px] rounded-full flex justify-center items-center"
+          >
+            <img
+              src="instagram.webp"
+              alt="logo linkedin"
+              class="w-[20px] h-[24px]"
+            />
+          </picture>
+
+          <p class="text-[#ffffff99]">Instagram</p>
         </div>
-      </div>
-      <!--seccion que aparece cuando en version mobile -->
-      <div
-        class="hidden lg:hidden  flex-col xs:flex xxs:flex text-[18px] text-white font-ceraBold leading-[20.11px]  mt-[20px] mb-[20px]"
-      >
-        <p>Nuestras redes</p>
-        <div class="flex flex-col gap-[8px] mt-[14px] ">
-          <div class="flex items-center">
-        <picture
-          class="flex bg-white w-[49px] h-[49px] items-center justify-center rounded-full "
-        >
-          <img
-            src="instagram.webp"
-            alt="logo instagram"
-            class="w-[28px] h-[28px]"
-          /> 
-        </picture>
-        <p class="text-white font-ceraLight text-[14px] pl-[8px] ">instagram</p>
-      </div>
-      <div class="flex items-center">
-        <picture
-        class="flex bg-white w-[49px] h-[49px] items-center justify-center rounded-full"
-      >
-        <img
-          src="linkedin.webp"
-          alt="logo linkedin"
-          class="w-[28px] h-[28px]"
-        />
-      </picture>
-      <p class="text-white font-ceraLight text-[14px] pl-[8px] ">Linkedin</p>
-    </div>
-      </div>
-      <!--linea  -->
-      <div class="flex flex-col pt-[16px] items-center justify-center w-[362px] mt-[14px] mb-[14px]">
-        <div class="flex border-[1px] w-[100%] h-[1px]"></div>
-      </div>
-      <p class="text-16px font-ceraBold text-white">Políticas de Privacidad</p>
-      <!--linea 2 -->
-      <div class="flex flex-col pt-[16px] items-center justify-center w-[362px] mb-[14px]">
-        <div class="flex border-[1px] w-[100%] h-[1px]"></div>
-      </div>
-      <p class="text-[16px] text-white font-ceraBold leading-[20.11px]">
-        © 2023 Shareflow. Todos los derechos reservados.
-      </p>
 
-      
-
-
-       
+        <p class="border-t border-b py-2 mb-2 text-[14px] font-bold">
+          Políticas de Privacidad
+        </p>
+        <p class="text-white font-ceraBold text-[11px]">
+          © 2023 Shareflow. Todos los derechos reservados.
+        </p>
+        <!-- Cuadro dos -->
       </div>
+       </div>
     </footer>
   </body>
 </html>
