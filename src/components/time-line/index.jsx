@@ -94,32 +94,31 @@ const Tab = () => {
   return (
     <div className="p-8">
       <div className="flex  tems-center justify-center">
-        {tabs.map((tab, index) => (
-          <div className="flex flex-col items-center  ">
-            <button
-              key={index}
-              onClick={() => setActiveTab(index)}
-              className={`w-[40px] h-[40px] flex items-center justify-center rounded-full ml-[45px] mr-[45px]
-               ${
-                 activeTab === index
-                   ? "bg-fourth text-white "
-                   : "bg-[#cfc5de] text-[gray-200] "
-               }`}
-            >
-              <span className="text-[30px] text-primary font-ceraBold">
+      {tabs.map((tab, index) => (
+    <div key={index} className="flex flex-col items-center">
+        <button
+            onClick={() => setActiveTab(index)}
+            className={`w-[40px] h-[40px] flex items-center justify-center rounded-full ml-[45px] mr-[45px]
+            ${
+                activeTab === index
+                ? "bg-fourth text-white "
+                : "bg-[#cfc5de] text-[gray-200] "
+            }`}
+        >
+            <span className="text-[30px] text-primary font-ceraBold">
                 {index + 1}
-              </span>
-            </button>
-            <p
-              className={`mt-2 text-[20px] font-ceraBold  ${
+            </span>
+        </button>
+        <p
+            className={`mt-2 text-[20px] font-ceraBold  ${
                 activeTab === index ? "text-black" : "text-gray-200"
-              }`}
-            >
-              {" "}
-              {tab.title}
-            </p>
-          </div>
-        ))}
+            }`}
+        >
+            {" "}
+            {tab.title}
+        </p>
+    </div>
+))}
       </div>
 
       <div className="mt-8">{tabs[activeTab].content}</div>
