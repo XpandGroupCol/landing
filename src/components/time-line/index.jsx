@@ -9,7 +9,7 @@ const Tab = () => {
       content: (
         <>
           <div className="flex flex-col-xs md:flex-col xs:flex-col lg:flex-row  justify-center items-center">
-            <div className="flex flex-col lg:pb-0 xs:pb-[20px] flex-1">
+            <div className="flex flex-col lg:pb-0 xs:pb-[20px] w-[40%]">
               <p className="font-ceraBold text-third lg:leading-[73px] xs:leading-[30px] lg:text-left xs:text-center lg:text-[60px] xs:text-[24px] xxs:text-[24px] mb-[10px] ">
                 Determina con precisión
                 a quién deseas llegar:
@@ -25,8 +25,8 @@ const Tab = () => {
                  tu marca.
               </p>
             </div>
-            <div className="flex flex-1 ">
-              <img src="Publico.webp" className="lg:w-[588px] lg:ml-[75px] xs:w-[270px] ml-[75px] xs:ml-[0px] md:ml-[0px] md:w-[504px] xxs:ml-[0px]" />
+            <div className="flex  ">
+              <img src="publico.webp" className="lg:w-[588px] w-[600px] lg:ml-[75px] xs:w-[270px] ml-[75px] xs:ml-[0px] md:ml-[0px] md:w-[504px] xxs:ml-[0px]" />
             </div>
           </div>
         </>
@@ -37,7 +37,7 @@ const Tab = () => {
       content: (
         <>
           <div className="flex flex-col-xs md:flex-col xs:flex-col lg:flex-row  justify-center items-center">
-            <div className="flex flex-col lg:pb-0 xs:pb-[20px] flex-1 ">
+            <div className="flex flex-col lg:pb-0 xs:pb-[20px]  w-[40%] ">
               <p className="font-ceraBold text-third lg:leading-[73px] xxs:text-[24px] xs:leading-[30px] lg:text-left xs:text-center lg:text-[60px] xs:text-[24px] mb-[10px]">
                 Selecciona estratégicamente tu ubicación:
               </p>
@@ -55,7 +55,7 @@ const Tab = () => {
               </p>
             </div>
             <div className="flex ">
-              <img src="Publico.webp" className="lg:w-[588px] lg:ml-[75px] xs:w-[270px] ml-[75px] xs:ml-[0px] md:ml-[0px] md:w-[504px] xxs:ml-[0px] " />
+              <img src="medios.webp" className="lg:w-[588px] w-[680px] lg:ml-[75px] xs:w-[270px] ml-[75px] xs:ml-[0px] md:ml-[0px] md:w-[504px] xxs:ml-[0px] " />
             </div>
           </div>
         </>
@@ -66,7 +66,7 @@ const Tab = () => {
       content: (
         <>
           <div className="flex flex-col-xs md:flex-col xs:flex-col lg:flex-row  justify-center items-center">
-            <div className="flex flex-col lg:pb-0 xs:pb-[20px] flex-1">
+            <div className="flex flex-col lg:pb-0 xs:pb-[20px] w-[40%]">
               <p className="font-ceraBold text-third lg:leading-[73px] xxs:text-[24px] xs:leading-[30px] lg:text-left xs:text-center lg:text-[60px] xs:text-[24px] mb-[10px]">
                 Potencia tu mensaje con creatividad:
               </p>
@@ -83,7 +83,7 @@ const Tab = () => {
               </p>
             </div>
             <div className="flex">
-              <img src="Publico.webp" className="lg:w-[588px] lg:ml-[75px] xs:w-[270px] ml-[75px] xs:ml-[0px] md:ml-[0px] md:w-[504px] xxs:ml-[0px]" />
+              <img src="mensaje.webp" className="lg:w-[650px] w-[588] lg:ml-[75px] xs:w-[270px] ml-[75px] xs:ml-[0px] md:ml-[0px] md:w-[504px] xxs:ml-[0px]" />
             </div>
           </div>
         </>
