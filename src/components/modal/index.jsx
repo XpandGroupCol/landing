@@ -32,7 +32,7 @@ const Modal = ({ children, open, onClose, title }) => {
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-xl bg-white text-left align-middle shadow-xl transition-all px-4">
                   <Dialog.Title
                     as="h3"
-                    className="px-8 py-8 text-3xl font-medium uppercase leading-8 text-primary pb-6 text-center border-b-2 border-gray-300 font-ceraBold"
+                    className="px-8 py-8 text-3xl font-medium uppercase leading-8 text-fourth pb-6 text-center border-b-2  font-ceraBold"
                   >
                     {title}
                   </Dialog.Title>

@@ -1,0 +1,111 @@
+---
+import Checkicon from "./checkicon.astro";
+import Iconoequis from "./Iconoequis.astro";
+import "../global.css";
+---
+
+<div class="flex flex-col gap-4 md:flex-row lg:gap-8">
+  <!-- este es el div fucsia -->
+  <div
+    id="benefits"
+    class="bg-third flex flex-col flex-1 font-ceraligth text-[#ffffff99]
+    text-primary rounded-[28px] px-[30px] py-[20px] lg:py-[40px]"
+  >
+    <div class="flex flex-col gap-2 lg:gap-5">
+      <div>
+        <h3 class="text-center text-[28px] mb-3 lg:text-left">
+          Con otros <span class="font-ceraBold text-white">Opciones</span>
+        </h3>
+        <div class="flex gap-[8px] items-center">
+          <Iconoequis />
+          <p class="font-ceraBold text-white">
+            Selección manual de medios sin soporte.
+          </p>
+        </div>
+        <p class="font-ceraligth">
+          • <span class="font-ceraBold text-white"
+            >Requiere aproximadamente 1 semana</span
+          >
+           de planeación de la campaña.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex gap-[8px] items-center">
+          <Iconoequis />
+          <h4 class="font-ceraBold text-white">
+            Involucra intermediarios en el proceso de negociación.
+          </h4>
+        </div>
+        <p>
+          •<span class="font-ceraBold text-white">
+            Limitaciones en la compra
+          </span>con los de medios y ubicaciones.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex gap-[8px] items-center">
+          <Iconoequis />
+          <h4 class="font-ceraBold text-white">
+            Cobertura limitada en medios a nivel segmentación.
+          </h4>
+        </div>
+        <p>
+          • <span class="font-ceraBold text-white"
+            >Requieres línea de credito
+          </span>de tu campaña y el y montos minimos de inversión.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--el otro cuadro -->
+  <div
+    class="bg-white flex flex-col flex-1
+   font-ceraLight
+rounded-[28px] px-[30px] py-[20px] lg:py-[40px]"
+  >
+    <h3 class="text-[28px] mb-3 text-center lg:text-left lg:mb-4">
+      Con <span class="font-ceraBold text-third"> Shareflow</span>
+    </h3>
+    <div class="flex flex-col gap-2 lg:gap-5">
+      <div>
+        <div class="flex gap-[8px] items-center">
+          <Checkicon />
+          <p class="font-ceraBold">
+            ¡Cuenta con IA que optimiza tu presupuesto!
+          </p>
+        </div>
+        <p class="font-ceraligth">
+          • <span class="font-ceraBold">Tu campaña estará en marcha en</span>
+           tan solo 10 minutos.
+        </p>
+      </div>
+
+      <div>
+        <div class="flex gap-[8px] items-center">
+          <Checkicon />
+          <h4 class="font-ceraBold">Puedes comprar medios directamente.</h4>
+        </div>
+        <p>
+          •<span class="font-ceraBold"> Más de 150 medios disponibles</span>
+        </p> y 300 formatos diferentes.
+      </div>
+
+      <div>
+        <div class="flex gap-[8px] items-center">
+          <Checkicon />
+          <h4 class="font-ceraBold">Alta capacidad de segmentación</h4>
+        </div>
+        <p>
+          • <span class="font-ceraBold">Puedes alcanzar una audiencia</span>
+        </p>de manera precisa y efectiva.
+        <p>
+          • <span class="font-ceraBold">Contamos con diferentes</span> qmetodos
+          de pago.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
