@@ -45,4 +45,4 @@ export const customConfig = {
 };
 
 export const BASE_URL =
-  "https://shareflow-api-prod.up.railway.app/v1/site/invitation";
+  "https://shareflow-api-7nzb-dev.fl0.io/v1/site/invitation";
