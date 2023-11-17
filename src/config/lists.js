@@ -39,10 +39,10 @@ export const customConfig = {
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-      },
+      }, 
     },
   ],
 };
 
 export const BASE_URL =
-  "https://shareflow-api-7nzb-dev.fl0.io/v1/site/invitation";
+  "https://shareflow-api-dev-dbff.2.ie-1.fl0.io/";
