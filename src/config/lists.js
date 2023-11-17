@@ -35,6 +35,7 @@ export const customConfig = {
   slidesToShow: 1,
   responsive: [
     {
+      
       breakpoint: 300,
       settings: {
         slidesToShow: 2,
