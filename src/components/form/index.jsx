@@ -142,7 +142,7 @@ const WelcomeForm = ({
               type="button"
               disabled={loading}
               onClick={handleClose}
-              className={`border-2 border-fourth text-fourth uppercase px-2 py-1  font-semibold rounded-md ${
+              className={`border-2 border-[#f0034a] text-[#f0034a] uppercase px-2 py-1  font-semibold rounded-md ${
                 loading ? "opacity-50" : ""
               }`}
             >
