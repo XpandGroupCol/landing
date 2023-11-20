@@ -6,18 +6,35 @@
     @font-face {
         font-family: "Cera Bold" ;
         src: url("/fonts/cera-pro-bold.otf") format("opentype");
-        font-weight: 700;
-    }
-
-    @font-face {
-        font-family: "Cera Normal" ;
-        src: url("/fonts/cera-pro-normal.otf") format("opentype");
-        font-weight: 500;
+        font-weight: "700";
     }
 
     @font-face {
         font-family: "Helvetica" ;
         src: url("/fonts/helvetica-neue-normal.otf") format("opentype");
-        font-weight: 500;
+        font-weight: "500";
     }
+    @font-face {
+        font-family: "Cera Light";
+        src: url("/fonts/cera-pro-light.otf") format("opentype");
+        font-weight: "300";
+        
+        
+        
+    }
+  
+   
+} 
+.slide-left{
+    transform: rotate(180deg) !important;
 }
+.slide-left .each-slide-effect{
+    transform: rotate(-180deg) !important;
+}
+
+@media (max-width: 450px) {
+    .flex-col-xs {
+      flex-direction: column !important;
+    }
+  }
+  

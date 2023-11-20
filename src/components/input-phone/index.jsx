@@ -28,7 +28,7 @@ const PhoneInput = forwardRef(({ onChange, value, onBlur, ...props }, ref) => {
         {...props}
         inputComponent={Input}
       />
-  )
+  );
 })
 
 export default PhoneInput
